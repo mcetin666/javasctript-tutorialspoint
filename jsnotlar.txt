@@ -1,5 +1,6 @@
 JavaScript is a lightweight, interpreted programming language.
 it covers most og the impotant consepts related to javascript such as 
+
 *operators, 
 *control flow, 
 *functions, 
@@ -8,38 +9,85 @@ it covers most og the impotant consepts related to javascript such as
 *asynchronous javascript,
 *events 
 *dom manipılation and much more
+
 JavaScript is a dynamic computer programming language
 It is a dynamically typed programming language, which means that we don’t care about variable data types while writing the JavaScript code.
 JavaScript is a single-threaded programming language that we can use for client-side or server-side development.
 You can use the <script > tag to add JavaScript in the HTML file. However, it also allows you to add JavaScript to the web page from the external JavaScript file, having '.js' extension.
+
 Dom Manipulation
 JavaScript allows developers to manipulate the webpage elements. Also, you can control the browser.
+
 Event Handling
 JavaScript allows you to handle the events used to interact with the web page.
+
 Dynamic Typing
 JavaScript decides the type of variables at runtime. So, we don’t need to care about variable data type while writing the code, providing more flexibility to write code.
+
 Functional Programming
 JavaScript supports the functional programming. In JavaScript, you can define the first-class function, pure functions, closures, higher-order functions, arrow funcitons, function expresions, etc.
+
 Object-oriented Programming
 JavaScript contains the classes, and we can implement all object-oriented programming concepts using its functionality.
 It also supports inheritance, abstraction, polymorphism, encapsulation, etc, concepts of Object-oriented programming.
+
 Built-in Objects
 JavaScript contains built-in objects like Math and Date. We can use a Math object to perform mathematical operations and a Date object to manipulate the date easily.
+
 Object Prototypes
 In JavaScript, everything is an object. For example, array, function, number, string, boolean, set, map, etc. are objects.
+
 Built-in Methods
 JavaScript also contains the built-in methods for each object. Developers can use the built-in methods to write efficient and shorter codes.
+
 Modular Programming
 JavaScript allows you to write the code in different modules and connect them with the parent module. So developers can write maintainable code.
+
 JSON
 JSON stands for JavaScript object notation. It is a widely used data format to exchange data between two networks. For example, server and client.
+
 Asynchronous Programming
 JavaScript is a single-threaded programming language. To execute your code faster, you can use asynchronous programming.
+
 Event-driven Architecture
 The event-driven architecture of JavaScript allows developers to create interactive and responsive web applications by handling a large user base concurrently.
+
 Server-side Support
 The Node.js runtime environment of JavaScript is widely used to create the backend of the application, as javaScript can also be used to create servers. It allows you to create a scalable backend for the application
+
 JavaScript Syntax
 JavaScript syntax comprises a set of rules that define how to construct a JavaScript code. JavaScript can be implemented using JavaScript statements that are placed within the <script>... </script> HTML tags in a web page.
 You can place the <script> tags, containing your JavaScript, anywhere within your web page, but it is normally recommended that you should keep it within the <head> tags.
+
+JavaScript console.log() method
+The console.log() is one of the most important methods in JavaScript. It is used to print the message in the web console.
+
+JavaScript Comments
+JavaScript comments are used to explain the purpose of the code. The comments are not executed as a part of program and these are solely meant for human developers to understand the code better.
+
+JavaScript Variables
+JavaScript variables are used to store data that can be changed later on. These variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container.
+
+JavaScript is untyped language. This means that a JavaScript variable can hold a value of any data type. Unlike many other languages, you don't have to tell JavaScript during variable declaration what type of value the variable will hold. The value type of a variable can change during the execution of a program and JavaScript takes care of it automatically.
+
+
+JavaScript Variable Scope
+The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.
+Global Variables − A global variable has global scope which means it can be defined anywhere in your JavaScript code.
+Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
+
+What is JavaScript let statement?
+The JavaScript let statement is used to declare a variable. With the let statement, we can declare a variable that is block-scoped. This mean a variable declared with let is only accessible within the block of code in which it is defined.
+
+JavaScript Block Scope vs. Function Scope
+The scope of the variable declared with the let keyword is a block-scope. It means if you define the variable with the let keyword in the specific block, you can access the variable inside that particular block only, and if you try to access the variable outside the block, it raises an error like 'variable is not defined'.
+
+Redeclaring Variables in JavaScript
+You can't redeclare the variables declared with the let keyword in the same block. However, you can declare the variables with the same name into the different blocks with the same function.
+
+Variable Hoisting
+The hoisting behaviors of JavaScript move the declaration of the variables at the top of the code. The let keyword doesn't support hoisting, but the var keyword supports the hosting.
+
+JavaScript Constants
+JavaScript constants are the variables whose values remain unchanged throughout the execution of the program. You can declare constants using the const keyword.
 
