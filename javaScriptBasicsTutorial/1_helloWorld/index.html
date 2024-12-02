@@ -1,20 +1,16 @@
 <html>
   <head>
     <script>
-      document.write("Hello World");
-    </script>
-    <script>
-      alert("Hello World");
-    </script>
-    <script>
-      console.log("Hello World");
+      document.write("Hello World directly without tag");
+      alert("Hello World alert");
+      console.log("Hello World for console log");
     </script>
   </head>
   <body>
     <div id="output"></div>
     <script>
-      document.getElementById("output").innerHTML = "Hello World";
+      document.getElementById("output").innerHTML =
+        "Hello World in output div element";
     </script>
   </body>
-  <html></html>
 </html>
