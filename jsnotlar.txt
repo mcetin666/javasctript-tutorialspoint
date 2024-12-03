@@ -177,3 +177,8 @@ The exponentiation operator in JavaScript is represented as **. The exponentiati
 
 In JavaScript, operator precedence ensures the priority of the operators to be executed when a single expression contains multiple operators. So, whatever expressions have higher priority, the compiler executes it first over other operators and then executes the operators with the lower precedence.
 
+The JavaScript if...else statement executes a block of code when the specified condition is true. When the condition is false the else block will be executed. The if-else statements can be used to control the flow of execution of a program based on different conditions.
+
+A while statement in JavaScript creates a loop that executes a block of code repeatedly, as long as the specified condition is true. The condition is evaluated before the execution of the block of code.
+
+The JavaScript for loop is used to execute a block of code repeteatedly, until a specified condition evaluates to false. It can be used for iteration if the number of iteration is fixed and known.

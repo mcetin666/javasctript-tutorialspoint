@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Initialization is optional in for loop</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      var p = 0;
+      for (; p < 5; p++) {
+        output.innerHTML += "P -> " + p + "<br/>";
+      }
+      output.innerHTML += "Outside the loop! <br>";
+      output.innerHTML += "P -> " + p + "<br/>";
+    </script>
+  </body>
+</html>
