@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let p = 3;
+      let q = 2;
+      let r = 3;
+      let x = 3;
+      let y = 3;
+      let pow1 = p ** (q ** r);
+      let pow2 = p ** (q ** r);
+      let pow3 = p ** (q ** (r ** x));
+      let pow4 = p ** (q ** (r ** (x ** y)));
+      document.getElementById("output").innerHTML =
+        "pow1 = " +
+        pow1 +
+        "<br>" +
+        "pow2 = " +
+        pow2 +
+        "<br>" +
+        "pow3 = " +
+        pow3 +
+        "<br>" +
+        "pow4 = " +
+        pow4;
+    </script>
+  </body>
+</html>

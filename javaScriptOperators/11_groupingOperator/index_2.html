@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      var fun = function () {
+        return 5;
+      };
+      let ans1 = 5 + 10 / fun();
+      let ans2 = (5 + 10) / fun();
+      document.getElementById("output").innerHTML =
+        "Result 1: " + ans1 + "<br>" + "Result 2: " + ans2;
+    </script>
+  </body>
+</html>

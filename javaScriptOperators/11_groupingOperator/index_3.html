@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let res1 = (false && false) || true; // true
+      let res2 = false && (false || true); //false
+      document.getElementById("output").innerHTML =
+        "Result without grouping operator: " +
+        res1 +
+        "<br>" +
+        "Result with grouping operator: " +
+        res2;
+    </script>
+  </body>
+</html>

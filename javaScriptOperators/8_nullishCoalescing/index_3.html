@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const obj = {
+        product: "Mobile",
+        price: 20000,
+        color: "Blue",
+      };
+
+      let product = obj.product ?? "Watch";
+      let brand = obj.brand ?? "Apple";
+      document.getElementById("output").innerHTML =
+        "The product is " + product + " of the brand " + brand;
+    </script>
+  </body>
+</html>

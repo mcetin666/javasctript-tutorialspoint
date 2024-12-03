@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <script>
+      try {
+        x = 10;
+        document.getElementById("output1").innerHTML = delete x;
+        document.getElementById("output2").innerHTML = x;
+      } catch (e) {
+        document.getElementById("output2").innerHTML = e;
+      }
+    </script>
+  </body>
+</html>

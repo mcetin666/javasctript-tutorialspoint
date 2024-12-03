@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      var x = 10;
+      var fun = function () {
+        return 20;
+      };
+      document.getElementById("output").innerHTML = document.getElementById(
+        "output"
+      ).innerHTML =
+        "delete Math.PI :" +
+        delete Math.PI +
+        "<br>" +
+        "delete Math :" +
+        delete Math +
+        "<br>";
+
+      try {
+        document.getElementById("output").innerHTML += Math.PI;
+      } catch (e) {
+        document.getElementById("output").innerHTML += e;
+      }
+    </script>
+  </body>
+</html>

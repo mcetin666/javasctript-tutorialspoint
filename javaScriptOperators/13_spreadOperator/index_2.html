@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <script>
+      const nums1 = [10, 20, 30];
+      const nums3 = [...nums1];
+      document.getElementById("result1").innerHTML = nums3;
+      nums1.push(50);
+      document.getElementById("result2").innerHTML = nums1 + "<br>";
+      document.getElementById("result2").innerHTML += nums3;
+    </script>
+  </body>
+</html>
