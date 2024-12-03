@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <div id="output"></div>
   </head>
   <body>
     <script>
-      const arr = ["door", "window", "roof", "wall"];
-      //updating arr[0]
-      arr.push("fence");
-    //   arr = ["table", "chair"] // reassiging array will cause error.
-      document.write(arr);
+      let x = "Hello";
+      x += "World";
+      document.getElementById("output").innerHTML = "Value of x: " + x;
     </script>
   </body>
 </html>

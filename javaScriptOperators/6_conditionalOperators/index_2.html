@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <div id="output"></div>
+  </head>
+  <body>
+    <script>
+      const year = 2004;
+      const obj = {
+        name: "John",
+        age: year < 2005 ? "adult" : "minor",
+        city: "New York",
+      };
+      document.getElementById("output").innerHTML =
+        obj.name + " is " + obj.age + " and lives in " + obj.city;
+    </script>
+  </body>
+</html>

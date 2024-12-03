@@ -91,3 +91,63 @@ The hoisting behaviors of JavaScript move the declaration of the variables at th
 JavaScript Constants
 JavaScript constants are the variables whose values remain unchanged throughout the execution of the program. You can declare constants using the const keyword.
 
+Can't be Reassigned
+You can't update the value of the variables declared with the const keyword.
+
+No Const Hoisting
+Varaibles defined with const keyword are not hoisted at the top of the code.
+
+JavaScript Data Types
+Data types in JavaScript referes to the types of the values that we are storing or working with. One of the most fundamental characteristics of a programming language is the set of data types it supports. These are the type of values that can be represented and manipulated in a programming language.
+
+JavaScript Type Conversions
+Type Conversions in JavaScript refer to the automatic or explicit process of converting data from one data type to another in JavaScript. These conversions are essential for JavaScript to perform operations and comparisons effectively. JavaScript variables can contain the values of any data type as it is a weakly typed language.
+
+Strict Mode in JavaScript
+In JavaScript, the strict mode is introduced in the ES5 (ECMAScript 2009). The purpose behind introducing the "strict mode" is to make the JavaScript code more secure.
+
+Reserved Keywords in JavaScript
+The reserved keywords in JavaScript are predefined keywords used to serve the built-in functionality of the programming language. For example, the var and let keywords are used to define variables, the function keyword is used to define the functions, etc. JavaScript contains more that fifty reserved keywords.
+
+Reserved Keywords
+Here is the list of reserved keywords; you can’t use them as an identifier −
+
+abstract	double	implements	return
+arguments	else	in	switch
+await	  enum	 instanceof	 synchronized
+boolean	eval	int	this
+break	export	interface	throw
+byte	extends	let	throws
+case	false	long	transient
+catch	final	native	true
+char	finally	new	try
+class	float	null	typeof
+const	for	package	var
+continue	function	private	void
+debugger	goto	protected	volatile
+default	if	public	yield
+delete	implements	short	while
+do	import	static	with
+double	in	super
+
+What is an Operator?
+In JavaScript, an operator is a symbol that performs an operation on one or more operands, such as variables or values, and returns a result. Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands, and ‘+’ is called the operato
+
+JavaScript Arithmetic Operators
+The JavaScript arithmetic operators are used to perform mathematical calculations such as addition, multiplication, subtraction, division, etc. on numbers. JavaScript supports the following arithmetic operators
+
+JavaScript Comparison Operators
+The JavaScript comparison operators compare two values and returns a boolean result (true or false). JavaScript supports the following comparison operators
+
+JavaScript Logical Operators
+The logical operators are generally used to perform logical operations on boolean values. But logical operators can be applied to values of any types not only boolean.
+
+JavaScript Bitwise Operators
+The JavaScript bitwise operators are used to perform bit-level operations on integers. JavaScript supports the following seven types of bitwise operators
+
+JavaScript Assignment Operators
+In JavaScript, an assignment operator is used to assign a value to a variable. JavaScript supports the following assignment operators
+
+JavaScript Miscellaneous Operators
+There are few other operators supported by JavaScript. These operators are conditional operator (? :), typeof operator, delete operator, etc.
+

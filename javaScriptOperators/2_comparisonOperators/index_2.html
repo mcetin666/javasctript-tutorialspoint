@@ -6,12 +6,13 @@
     <title>Document</title>
   </head>
   <body>
+    <p>Set the variables to different values and then try...</p>
+    <p id="output"></p>
     <script>
-      const arr = ["door", "window", "roof", "wall"];
-      //updating arr[0]
-      arr.push("fence");
-    //   arr = ["table", "chair"] // reassiging array will cause error.
-      document.write(arr);
+      const a = 10;
+      const b = 20;
+      let result = a != b;
+      document.getElementById("output").innerHTML = "(a != b) => " + result;
     </script>
   </body>
 </html>

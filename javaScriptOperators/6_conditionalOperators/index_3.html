@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <div id="output"></div>
   </head>
   <body>
     <script>
-      const arr = ["door", "window", "roof", "wall"];
-      //updating arr[0]
-      arr.push("fence");
-    //   arr = ["table", "chair"] // reassiging array will cause error.
-      document.write(arr);
+      let operator = "-";
+      let res = operator == "+" ? 10 + 20 : 10 - 20;
+      document.getElementById("output").innerHTML = "The result is: " + res;
     </script>
   </body>
 </html>

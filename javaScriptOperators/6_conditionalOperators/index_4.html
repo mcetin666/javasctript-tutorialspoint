@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      //   const greet = function (user) {
+      //     const name = user ? user.name : "stranger";
+      //     return `Hello, ${name}`;
+      //   };
+      const greet = (user) => {
+        const name = user ? user.name : "stranger";
+        // return `Hello, ${name}`;
+        return "Hello, " + name;
+      };
+      document.getElementById("output").innerHTML =
+        greet({ name: "John" }) + "<br>" + greet(null);
+      //   greet({ name: "John" }) + "<br>" + greet(undefined);
+    </script>
+  </body>
+</html>

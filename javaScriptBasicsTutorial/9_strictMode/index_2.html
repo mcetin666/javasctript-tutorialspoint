@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      x = 100; //this is valid
+      document.write("The value of the X is - " + x);
+      function test() {
+        "use strict";
+        y = 50; //this is not valid
+        document.write("The value of the y is - " + y);
+      }
+      test();
+    </script>
+  </body>
+</html>

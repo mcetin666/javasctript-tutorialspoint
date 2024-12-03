@@ -7,11 +7,13 @@
   </head>
   <body>
     <script>
-      const arr = ["door", "window", "roof", "wall"];
-      //updating arr[0]
-      arr.push("fence");
-    //   arr = ["table", "chair"] // reassiging array will cause error.
-      document.write(arr);
+      let color = "Brown";
+      const obj = {
+        animal: "Horse",
+        legs: 4,
+        horseColor: color,
+      };
+      document.write("The given object is: " + JSON.stringify(obj) + "<br/>");
     </script>
   </body>
 </html>
