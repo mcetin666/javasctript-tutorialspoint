@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>JavaScript - for...in loop</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      let str = "Hello";
+      for (key in str) {
+        output.innerHTML += key + " -> " + str[key] + "<br>";
+      }
+    </script>
+  </body>
+</html>

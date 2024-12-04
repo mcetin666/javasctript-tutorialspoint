@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>JavaScript - Continue statement</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      output.innerHTML += "Entering the loop. <br /> ";
+      for (let x = 1; x < 5; x++) {
+        if (x == 3) {
+          continue; // skip rest of the loop body
+        }
+        output.innerHTML += x + "<br />";
+      }
+      output.innerHTML += "Exiting the loop!<br /> ";
+    </script>
+  </body>
+</html>

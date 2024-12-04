@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>JavaScript - Break statement</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      output.innerHTML += "Entering the loop. <br /> ";
+      for (let x = 1; x < 10; x++) {
+        for (let y = 1; y < 10; y++) {
+          if (y == 3) {
+            break; // breaks inner loop
+          }
+          output.innerHTML += x + " " + y + "<br />";
+        }
+        if (x == 3) {
+          break; // break outer loop
+        }
+      }
+      output.innerHTML += "Exiting the loop!<br /> ";
+    </script>
+  </body>
+</html>

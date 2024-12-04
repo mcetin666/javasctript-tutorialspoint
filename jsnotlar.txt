@@ -182,3 +182,21 @@ The JavaScript if...else statement executes a block of code when the specified c
 A while statement in JavaScript creates a loop that executes a block of code repeatedly, as long as the specified condition is true. The condition is evaluated before the execution of the block of code.
 
 The JavaScript for loop is used to execute a block of code repeteatedly, until a specified condition evaluates to false. It can be used for iteration if the number of iteration is fixed and known.
+
+The for...in Loop
+The for...in loop in JavaScript is used to loop through an object's properties. The JavaScript for...in loop is a variant of the for loop. The for loop can't be used to traverse through the object properties. So, the for...in loop is introduced to traverse through all object properties.
+
+JavaScript for...of Loop
+The for...of loop in JavaScript is used to traverse elements of the iterable object. In each iteration, it gives an element of the iterable object. Iterable objects include arrays, strings, maps, sets, and generators.
+
+JavaScript Loop Control
+JavaScript provides full control to handle loops and switch statements. There may be a situation when you need to come out of a loop without reaching its bottom. There may also be a situation when you want to skip a part of your code block and start the next iteration of the loop.
+
+The break statement in JavaScript terminates the loop or switch case statement. When you use the break statement with the loop, the control flow jumps out of the loop and continues to execute the other code.
+
+The continue statement in JavaScript is used to skip the current iteration of a loop and continue with the next iteration. It is often used in conjunction with an if statement to check for a condition and skip the iteration if the condition is met.
+
+The JavaScript switch case is a conditional statement is used to execute different blocks of code depending on the value of an expression. The expression is evaluated, and if it matches the value of one of the case labels, the code block associated with that case is executed. If none of the case labels match the value of the expression, the code block associated with the default label is executed.
+
+In JavaScript, an iterable is an object which has Symbol.iterator() method in the object prototype. Some examples of iterable are array, set, map, string, etc. The Symbol.iterator() method returns an object containing the next() method is called iterator. Here, the next() method returns the elements of iterable in each call.
+

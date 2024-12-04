@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>JavaScript - for...of loop</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const nums = new Set([10, 20, 30, 30, 30, 40, 50, 60]);
+      for (let num of nums) {
+        output.innerHTML += num + ", ";
+      }
+    </script>
+  </body>
+</html>

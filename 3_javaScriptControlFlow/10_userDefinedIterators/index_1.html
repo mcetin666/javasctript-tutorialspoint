@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>JavaScript - Iterators</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const nums = [10, 72, 45];
+      const iter = nums[Symbol.iterator]();
+      output.innerHTML += JSON.stringify(iter.next()) + "<br>";
+      output.innerHTML += JSON.stringify(iter.next()) + "<br>";
+      output.innerHTML += JSON.stringify(iter.next()) + "<br>";
+      output.innerHTML += JSON.stringify(iter.next()) + "<br>";
+    </script>
+  </body>
+</html>

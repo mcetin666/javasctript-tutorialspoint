@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>JavaScript - for...in loop</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      let car = {
+        brand: "OD",
+        model: "Q7",
+        color: "Black",
+      };
+      for (key in car) {
+        car[key] = null;
+      }
+      output.innerHTML += "The updated object is - " + JSON.stringify(car);
+    </script>
+  </body>
+</html>

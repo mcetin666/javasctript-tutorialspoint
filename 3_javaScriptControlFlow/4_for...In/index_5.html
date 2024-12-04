@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      var aProperty;
+      output.innerHTML = "Navigator Object Properties<br> ";
+      for (aProperty in navigator) {
+        output.innerHTML += aProperty;
+        output.innerHTML += "<br>";
+      }
+      output.innerHTML += "Exiting from the loop!";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>JavaScript - Break statement</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      output.innerHTML += "Entering the loop. <br /> ";
+      for (let x = 1; x < 10; x++) {
+        if (x == 5) {
+          break; // breaks out of loop completely
+        }
+        output.innerHTML += x + "<br />";
+      }
+      output.innerHTML += "Exiting the loop!<br /> ";
+    </script>
+  </body>
+</html>

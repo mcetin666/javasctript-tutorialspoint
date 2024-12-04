@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>JavaScript - Switch case statement</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      var grade = "C";
+      output.innerHTML += "Entering switch block <br />";
+      switch (grade) {
+        case "A":
+        case "B":
+          output.innerHTML += "Passed <br />";
+          break;
+        case "C":
+        case "D":
+          output.innerHTML += "Failed! <br />";
+          break;
+        default:
+          output.innerHTML += "Unknown grade <br />";
+      }
+      output.innerHTML += "Exiting switch block";
+    </script>
+  </body>
+</html>

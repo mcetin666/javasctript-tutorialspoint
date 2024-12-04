@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>JavaScript - User defined iterators</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      // Empty object
+      oddNum = {};
+      // Add iterator
+      oddNum[Symbol.iterator] = function () {
+        let p = -1;
+        done = false;
+        return {
+          next() {
+            p += 2;
+            if (p == 9) return { done: true };
+            return { value: p, done: done };
+          },
+        };
+      };
+      for (const odd of oddNum) {
+        output.innerHTML += odd + "<br>";
+      }
+    </script>
+  </body>
+</html>
