@@ -200,3 +200,5 @@ The JavaScript switch case is a conditional statement is used to execute differe
 
 In JavaScript, an iterable is an object which has Symbol.iterator() method in the object prototype. Some examples of iterable are array, set, map, string, etc. The Symbol.iterator() method returns an object containing the next() method is called iterator. Here, the next() method returns the elements of iterable in each call.
 
+A function in JavaScript is a group of reusable code that can be called anywhere in your program. It eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
+
