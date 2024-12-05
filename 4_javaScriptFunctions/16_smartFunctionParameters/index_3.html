@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>JavaScript - Parameter Destructuring</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      function printWatch({ brand, price }) {
+        return "The price of the " + brand + "'s watch is " + price;
+      }
+
+      const watch = {
+        brand: "Titan",
+        price: 10000,
+        currency: "INR",
+      };
+      document.getElementById("output").innerHTML = printWatch(watch);
+    </script>
+  </body>
+</html>

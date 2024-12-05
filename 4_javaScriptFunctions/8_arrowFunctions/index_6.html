@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      let isMul = true;
+      const func = isMul
+        ? () => {
+            let res = 5 * 5;
+            document.getElementById("output").innerHTML +=
+              "The multiplication value is: " + res + "<br>";
+          }
+        : () => {
+            let res = 5 + 5;
+            document.getElementById("output").innerHTML +=
+              "The sum value is: " + res + "<br>";
+          };
+
+      func();
+    </script>
+  </body>
+</html>

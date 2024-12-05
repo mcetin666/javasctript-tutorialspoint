@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      const points1 = {
+        X: 100,
+        Y: 100,
+      };
+      const points2 = {
+        X: 200,
+        Y: 100,
+      };
+
+      const points3 = {
+        X: 350,
+        Y: 400,
+      };
+      function printVal() {
+        output.innerHTML += "Coordinates: " + this.X + "," + this.Y + "<br>";
+      }
+
+      const printFunc2 = printVal.bind(points1);
+      printFunc2();
+
+      const printFunc3 = printVal.bind(points2);
+      printFunc3();
+
+      const printFunc4 = printVal.bind(points3);
+      printFunc4();
+    </script>
+  </body>
+</html>

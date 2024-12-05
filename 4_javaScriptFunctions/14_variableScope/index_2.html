@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>JavaScript - Block scope</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function test() {
+        {
+          let x = 30;
+          output.innerHTML = "x = " + x;
+        }
+        // variable x is not accessible here
+        output.innerHTML = "x = " + x;
+      }
+      test();
+    </script>
+  </body>
+</html>

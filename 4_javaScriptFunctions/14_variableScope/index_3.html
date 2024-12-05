@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>JavaScript - Function scope</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function func() {
+        {
+          var x = 30;
+          let y = 20;
+          const z = 10;
+          output.innerHTML += "x -> Inside the block = " + x + "<br>";
+          output.innerHTML += "y -> Inside the block = " + y + "<br>";
+          output.innerHTML += "z -> Inside the block = " + z + "<br>";
+        }
+        output.innerHTML += "x -> Outside the block = " + x + "<br>";
+        output.innerHTML += "y -> Outside the block = " + y + "<br>";
+        output.innerHTML += "z -> Outside the block = " + z + "<br>";
+
+        // y and z can't be accessible here
+      }
+      func();
+    </script>
+  </body>
+</html>

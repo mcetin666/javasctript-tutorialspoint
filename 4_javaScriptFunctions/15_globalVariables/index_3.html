@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>JavaScript - Global variables</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function test() {
+        a = 90;
+        output.innerHTML += "a -> Inside the function = " + a + "<br>";
+      }
+      test();
+      output.innerHTML += "a -> Outside the function = " + a + "<br>";
+    </script>
+  </body>
+</html>

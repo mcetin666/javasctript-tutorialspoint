@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const add = new Function(
+        "const sum = function (a, b) {return  a+ b};  return sum"
+      )();
+      document.getElementById("output").innerHTML = add(5, 10); // 15
+    </script>
+  </body>
+</html>

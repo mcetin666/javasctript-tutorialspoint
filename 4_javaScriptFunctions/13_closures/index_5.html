@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>JavaScript - Closure</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function name() {
+        let name = "John";
+        return function getFullName() {
+          return name + " Doe";
+        };
+      }
+
+      const fullName = name();
+      output.innerHTML += "The full name is " + fullName();
+    </script>
+  </body>
+</html>

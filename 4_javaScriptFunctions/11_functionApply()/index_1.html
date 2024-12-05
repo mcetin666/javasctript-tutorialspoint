@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>JavaScript - Function apply() method</title>
+  </head>
+  <body>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <script>
+      function test() {
+        return "The function test is invoked!";
+      }
+      document.getElementById("output1").innerHTML = test();
+      document.getElementById("output2").innerHTML = test.apply();
+    </script>
+  </body>
+</html>

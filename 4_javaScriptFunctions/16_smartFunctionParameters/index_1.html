@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>JavaScript - Default parameters</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      function division(a = 100, b = 50) {
+        return a / b;
+      }
+      document.getElementById("output").innerHTML =
+        division(10, 2) +
+        "<br>" +
+        division(10, undefined) +
+        "<br>" +
+        division();
+    </script>
+  </body>
+</html>

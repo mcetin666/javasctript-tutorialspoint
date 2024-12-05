@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      // Original function with parameters
+      function multiply(x, y) {
+        return x * y;
+      }
+
+      // Using bind to preset the first parameter
+      const multiplyByTwo = multiply.bind(null, 2);
+
+      // Calling the bound function with only the second parameter
+      document.getElementById("output").innerHTML = multiplyByTwo(5);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function outer() {
+        output.innerHTML += "The outer function is executed! <br>";
+        function inner() {
+          output.innerHTML += "The inner function is executed! <br>";
+        }
+        inner();
+      }
+      outer();
+    </script>
+  </body>
+</html>

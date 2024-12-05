@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>JavaScript - Local scope</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function func() {
+        let first = 34;
+        var second = 45;
+        const third = 60;
+
+        output.innerHTML += "First -> " + first + "<br>";
+        output.innerHTML += "Second -> " + second + "<br>";
+        output.innerHTML += "Third -> " + third + "<br>";
+      }
+      func();
+    </script>
+  </body>
+</html>

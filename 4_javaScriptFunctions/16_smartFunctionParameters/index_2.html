@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>JavaScript - Rest parameters</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function sum(...nums) {
+        let totalSum = 0;
+        for (let p = 0; p < nums.length; p++) {
+          totalSum += nums[p];
+        }
+        return totalSum;
+      }
+      document.getElementById("demo").innerHTML =
+        sum(1, 5, 8, 20, 23, 45) +
+        "<br>" +
+        sum(10, 20, 30) +
+        "<br>" +
+        sum() +
+        "<br>";
+    </script>
+  </body>
+</html>

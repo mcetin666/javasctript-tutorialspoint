@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Hoisting with let and const</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      try {
+        x = 10;
+        output.innerHTML += "The value of x is -> " + x;
+        let x;
+      } catch (error) {
+        output.innerHTML += error.message;
+      }
+    </script>
+  </body>
+</html>

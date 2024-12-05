@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      function func(p, q = 10) {
+        return p + q;
+      }
+      output.innerHTML += "func(10, 20) -> " + func(10, 20);
+    </script>
+  </body>
+</html>

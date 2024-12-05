@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function counter() {
+        let cnt = 100; // Works as a global variable for the decrement function.
+        return function decrement() {
+          cnt = cnt - 1;
+          output.innerHTML += "The value of the cnt is: " + cnt + "<br>";
+        };
+      }
+      const func = counter(); // Returns the decrement() function expression
+      func();
+      func();
+      func();
+    </script>
+  </body>
+</html>

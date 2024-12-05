@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      function sum(p = 2, q = p * 2, r = p * q * 2) {
+        return p + q + r;
+      }
+      output.innerHTML += "sum(5, 10, 15)  ->  " + sum(5, 10, 15) + "<br>";
+      // 5 + 10 + 15 = 30
+      output.innerHTML += "sum(5, 10)  ->  " + sum(5, 10) + "<br>";
+      // 5 + 10 + (5 * 10 * 2) = 115
+      output.innerHTML += "sum()  ->  " + sum() + "<br>";
+      // 2 + 4 + 16 = 22
+    </script>
+  </body>
+</html>

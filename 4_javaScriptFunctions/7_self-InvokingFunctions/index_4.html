@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      (function () {
+        var string = "JavaScript";
+        window.string = string;
+      })();
+      document.getElementById("output").innerHTML =
+        "The value of the string variable is: " + string;
+    </script>
+  </body>
+</html>

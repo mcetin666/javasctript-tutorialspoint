@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>JavaScript - Function apply() method</title>
+  </head>
+  <body>
+    <p id="output-max">Max element in the array:</p>
+    <p id="output-min">Max element in the array:</p>
+    <script>
+      const numbers = [7, 6, 4, 3, 9];
+
+      document.getElementById("output-max").innerHTML += Math.max.apply(
+        null,
+        numbers
+      );
+
+      document.getElementById("output-min").innerHTML += Math.min.apply(
+        null,
+        numbers
+      );
+    </script>
+  </body>
+</html>

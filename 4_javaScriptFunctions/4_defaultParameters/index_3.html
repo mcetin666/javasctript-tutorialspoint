@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      function sum(p = 24, q = 26) {
+        return p + q;
+      }
+
+      output.innerHTML +=
+        "sum(5, undefined)  ->  " + sum(5, undefined) + "<br>";
+      // 5 + 26 = 31
+      output.innerHTML += "sum(undefined)  ->  " + sum(undefined) + "<br>";
+      // 24 + 26 = 50
+    </script>
+  </body>
+</html>

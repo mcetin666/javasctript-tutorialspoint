@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>JavaScript - Arguments are passed by reference</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      function update(obj) {
+        obj.domain = "www.tutorialspoint.com";
+      }
+      var obj = {
+        domain: "www.google.com",
+      };
+      output.innerHTML += "Before calling the function! <br>";
+      output.innerHTML += "domain = " + obj.domain + "<br>";
+      update(obj);
+      output.innerHTML += "After calling the function! <br>";
+      output.innerHTML += "domain = " + obj.domain + "<br>";
+    </script>
+  </body>
+</html>

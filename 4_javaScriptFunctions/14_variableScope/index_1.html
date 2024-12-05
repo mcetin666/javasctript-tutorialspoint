@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>JavaScript - Block scope</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      if (true) {
+        let a = 10;
+        document.getElementById("output").innerHTML = "a = " + a;
+      }
+      // a can't be accessed here
+      document.getElementById("output").innerHTML = "a = " + a;
+    </script>
+  </body>
+</html>

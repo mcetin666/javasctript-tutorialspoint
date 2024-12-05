@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>JavaScript - Variable Hoisting with function</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      function printNum() {
+        y = 20;
+        output.innerHTML += "The value of the variable y is : " + y;
+        var y; // Function scope
+      }
+      printNum();
+      // Variable Y can't be accessible here
+    </script>
+  </body>
+</html>

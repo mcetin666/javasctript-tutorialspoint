@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="output">The age of John is:</p>
+    <script>
+      const obj = {
+        name: "John",
+        getAge: () => {
+          return 10;
+        },
+      };
+      document.getElementById("output").innerHTML += obj.getAge();
+    </script>
+  </body>
+</html>

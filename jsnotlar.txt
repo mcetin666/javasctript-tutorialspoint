@@ -202,3 +202,45 @@ In JavaScript, an iterable is an object which has Symbol.iterator() method in th
 
 A function in JavaScript is a group of reusable code that can be called anywhere in your program. It eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
 
+The function expression allows us to define a JavaScript function in an expression. JavaScript functions are defined using a function declaration or a function expression. The main difference between them is the function name. The function name can be omitted in function expressions. This helps to create anonymous functions in JavaScript. We can store the function expression in the variable and use that variable to invoke the function expression.
+
+Function Parameters and Arguments
+The function parameters in JavaScript are variables listed inside the parentheses in the function definition. A function can have multiple parameters separated by commas. The function arguments are the values that are passed to function when it is called. We define function listing the parameters and call the function passing the arguments.
+
+The default parameters in JavaScript are a feature that allows you to specify a default value for a function parameter. The concept of the default parameters was introduced in the ES6. We can initialize the parameters with the default values. So, if the function is called with missing argument or argument with an undefined value, it uses the default value of the parameter in the function.
+
+The Function() Constructor
+The JavaScript Function() constructor can dynamically create a function object at the run time. The functions created using Function() constructor have global scope only.
+
+Function Hoisting
+The function hoisting in JavaScript is a default behavior in which function declarations are moved at the top of their local scope before execution of the code. So, you can call the function in its scope before it is declared. It's important to notice that only declaration is hoisted not the initialization. So the variables or functions should have been initialized before they are used.
+
+Self-Invoking Functions
+The self-invoking functions are JavaScript functions that execute immediately as they are defined. To define a self-invoking function, you can enclose an anonymous function within parentheses followed by another set of parentheses. These are also called self-executing anonymous functions.
+
+Arrow Functions
+The arrow functions in JavaScript allow us to create a shorter and anonymous function. Arrow functions are written without "function" keyword. The JavaScript arrow functions are introduced in ES6.
+
+Function Invocation
+The function invocation in JavaScript is the process of executing a function. A JavaScript function can be invoked using the function name followed by a pair of parentheses. When you write a function code in JavaScript, it defines the function with expressions and statements. Now, to evaluate these expressions, it is necessary to invoke the function. The function invocation is the synonym of the function call or function execution.
+
+Function call() Method
+The Function call() method allows us to invoke a function given a specific value for this and arguments provided individually. When a normal function is called, the value of this inside the function is the object that the function was accessed on. We can manipulate the this value and can assign an arbitrary object to this by using the call() method. In other word, we can call existing function as a method of an object without attaching the function to the object as a method.
+
+Function apply() Method
+The Function apply() method in JavaScript allows us to invoke a function given a specific value for this and arguments provided as an array.
+
+Function bind() Method
+The function bind() method in JavaScript creates a new function with a specified this value and optional arguments, without invoking the original function immediately. It is commonly used to set the context (this) for a function and partially apply arguments. This method is used to bind a particular object to a common function.
+
+What is Closure?
+The concept of closures in JavaScript allows nested functions to access variables defined in the scope of the parent function, even if the execution of the parent function is finished. In short, you can make global variables local or private using the closures.
+
+JavaScript Variable Scope
+The variable scope in JavaScript determines to the accessibility and visibility of the variable in different part of the code. The scope is the current context of the code execution. This means the variable scope is determined by where it is executed not by where it is declared.
+
+JavaScript Global Variables
+The global variables in JavaScript are the variables that are defined outside of the function or any particular block. They are accessible from anywhere in JavaScript code. All scripts and functions can access the global variables.
+
+The concept of smart function parameters in JavaScript is a way to make a function adaptable to different use cases. It allows the function to handle the different kinds of arguments passed to it while invoking it.
+

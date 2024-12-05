@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const mul = (a = 10, b = 15) => a * b;
+      output.innerHTML += "mul(5, 8) = " + mul(5, 8) + "<br>";
+      output.innerHTML += "mul(6) = " + mul(6) + "<br>";
+      output.innerHTML += "mul() = " + mul() + "<br>";
+    </script>
+  </body>
+</html>
