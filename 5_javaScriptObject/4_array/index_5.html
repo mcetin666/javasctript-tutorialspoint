@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const nums = [1, 2, 3, 4, 5];
+      nums.push(6); // Inserting 6 at the end
+      output.innerHTML += "Updated array is : " + nums + "<br>";
+      nums[nums.length] = 7; // Inserting 7
+      output.innerHTML += "Updated array is : " + nums + "<br>";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>JavaScript - Formatting the date</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const date = new Date(999999999999);
+      document.getElementById("output").innerHTML +=
+        "The Date after 1st January, 1970 is: " +
+        date.toDateString() +
+        "<br>" +
+        "The Date after 1st January, 1970 is: " +
+        date.toISOString() +
+        "<br>" +
+        "The Date after 1st January, 1970 is: " +
+        date.toUTCString();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const pattern = new RegExp("^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$");
+      document.getElementById("output").innerHTML =
+        "abcd@gmail.com is valid? : " +
+        pattern.test("abcd@gmail.com") +
+        "<br>" +
+        "abcdgmail.com is valid? : " +
+        pattern.test("abcdgmail.com");
+    </script>
+  </body>
+</html>

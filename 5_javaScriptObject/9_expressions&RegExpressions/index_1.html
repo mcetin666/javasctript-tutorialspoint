@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>JavaScript - Regular Expression</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      let pattern = /tutorialspoint/i;
+      let str = "Welcome to TuTorialsPoint! It is a good website!";
+      let res = str.search("tutorialspoint");
+      output.innerHTML += "Searching using the string : " + res + "<br>";
+      res = str.search(pattern);
+      output.innerHTML += "Searching using the regular expression : " + res;
+    </script>
+  </body>
+</html>

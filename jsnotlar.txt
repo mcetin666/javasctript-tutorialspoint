@@ -244,3 +244,21 @@ The global variables in JavaScript are the variables that are defined outside of
 
 The concept of smart function parameters in JavaScript is a way to make a function adaptable to different use cases. It allows the function to handle the different kinds of arguments passed to it while invoking it.
 
+The JavaScript Number object represents numerical data as floating-point numbers. It contains different properties (constants) and methods for working on numbers. In general, you do not need to worry about Number objects because the browser automatically converts number literals to instances of the number class.
+
+The JavaScript Boolean object represents two values, either "true" or "false". You can create a boolean object using the Boolean() constructor with a 'new' keyword. It takes a value as parameter and returns a boolean object. If value parameter is omitted or is 0, -0, null, false, NaN, undefined, or the empty string (""), the object has an initial value of false. In programming, the if-else statement evaluates either the code of the 'if' block or the 'else' block based on the boolean value of the conditional expression.
+
+The String object in JavaScript lets you work with a series of characters; it wraps JavaScript's string primitive data type with a number of helper methods.
+
+The JavaScript Array object lets you store multiple values in a single variable. An array is used to store a sequential collection of multiple elements of same or different data types. In JavaScript, arrays are dynamic, so you don’t need to specify the length of the array while defining the array. The size of a JavaScript array may decrease or increase after its creation.
+
+The Date object is a datatype built into the JavaScript language. Date objects are created with the new Date( ) as shown below.
+
+The DataView is an object in JavaScript that allows you to work with the binary data stored in the ArrayBuffer. It provides a low-level interface for reading and writing number types in a binary ArrayBuffer.
+
+The JavaScript Proxy Handlers are used to define custom behavior for fundamental operations performed on objects. By defining handlers, you can override the default behavior of fundamental operations. Following are the common proxy handler methods: apply(), construct(), get(), has(), etc.
+
+The JavaScript math object provides properties and methods for mathematical constants and functions. Unlike other global objects, Math is not a constructor. All the properties and methods of Math are static and can be called by using Math as an object without creating it.
+
+A regular expression (RegExp) in JavaScript is an object that describes a pattern of characters. It can contain the alphabetical, numeric, and special characters. Also, the regular expression pattern can have single or multiple characters.
+

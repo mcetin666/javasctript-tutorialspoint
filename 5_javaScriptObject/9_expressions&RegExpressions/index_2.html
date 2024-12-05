@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>JavaScript - Regular expression</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      let pattern = /\d+/g; // Matches pair of digits
+      let str = "10, 20, 30, 40, 50";
+
+      let res = str.replace(pattern, "100");
+      document.getElementById("output").innerHTML =
+        "String after replacement : " + res;
+    </script>
+  </body>
+</html>

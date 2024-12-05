@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        "Boolean(1) : " +
+        Boolean(1) +
+        "<br>" +
+        "Boolean(-1) : " +
+        Boolean(-1) +
+        "<br>" +
+        "Boolean('Hello') : " +
+        Boolean("Hello") +
+        "<br>" +
+        "Boolean(true) : " +
+        Boolean(true) +
+        "<br>" +
+        "Boolean(10.99) : " +
+        Boolean(10.99) +
+        "<br>" +
+        "Boolean({name: 'John'}) : " +
+        Boolean({ name: "John" }) +
+        "<br>" +
+        "Boolean(() => {return 1;}) : " +
+        Boolean(() => {
+          return 1;
+        });
+    </script>
+  </body>
+</html>

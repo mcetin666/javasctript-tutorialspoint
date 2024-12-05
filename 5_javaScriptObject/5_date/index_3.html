@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>JavaScript - Date object</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      let date = new Date(999999999999);
+      output.innerHTML +=
+        "The Date after 1st January, 1970 is - " + date + "<br>";
+      date = new Date(-999999999999);
+      output.innerHTML += "The Date before 1st January, 1970 is - " + date;
+    </script>
+  </body>
+</html>
