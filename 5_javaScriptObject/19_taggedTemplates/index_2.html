@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      function format(str, name) {
+        return str.join(" ") + name;
+      }
+      let name = "John";
+      let res = format`Hi ${name}, How are you?`;
+      document.getElementById("output").innerHTML = res;
+    </script>
+  </body>
+</html>

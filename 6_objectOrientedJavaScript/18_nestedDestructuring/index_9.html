@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const numbers = [10, { p: 20, q: 30 }];
+      const [a, { p, q }] = numbers;
+      document.getElementById("output").innerHTML =
+        "a = " + a + ", p = " + p + ", q = " + q;
+    </script>
+  </body>
+</html>

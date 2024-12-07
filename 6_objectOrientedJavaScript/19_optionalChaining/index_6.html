@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output">The color of the animal is:</div>
+    <script>
+      const animal = {
+        name: "Tiger",
+        info: {
+          legs: 2,
+          tail: 1,
+        },
+      };
+      animal.info?.legs;
+      const color = animal?.spec?.color ?? "Red";
+      document.getElementById("output").innerHTML += color;
+    </script>
+  </body>
+</html>

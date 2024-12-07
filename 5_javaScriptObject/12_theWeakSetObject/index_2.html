@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const weak_set = new WeakSet();
+      const car = {
+        brand: "Audi",
+        model: "Q5",
+      };
+      weak_set.add(car);
+
+      if (weak_set.has(car)) {
+        output.innerHTML =
+          "The car object is added successfully to the weak_set.";
+      }
+    </script>
+  </body>
+</html>

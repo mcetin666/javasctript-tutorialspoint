@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="output1">The size of the first leg is:</div>
+    <div id="output2">The size of the third leg is:</div>
+    <script>
+      const animal = {
+        name: "Tiger",
+        info: {
+          legs: {
+            first: 1.32,
+            second: 1.31,
+          },
+          tail: 1,
+        },
+      };
+      document.getElementById("output1").innerHTML += animal?.info?.legs?.first;
+      document.getElementById("output2").innerHTML +=
+        animal?.specs?.legs?.third;
+    </script>
+  </body>
+</html>

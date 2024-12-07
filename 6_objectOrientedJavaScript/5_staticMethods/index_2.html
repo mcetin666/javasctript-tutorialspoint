@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      class Table {
+        static printSize() {
+          return "The size of the table is 20 x 20 <br>";
+        }
+
+        static getColor() {
+          return "The color of the table is Pink";
+        }
+      }
+
+      document.getElementById("output").innerHTML =
+        Table.printSize() + "br" + Table.getColor();
+    </script>
+  </body>
+</html>

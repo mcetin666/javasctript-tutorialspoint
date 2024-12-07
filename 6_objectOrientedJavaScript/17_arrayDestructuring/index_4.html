@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const arr = [1, 2, 3, 4, 5, 6];
+      const [num1, num2, ...nums] = arr;
+      document.getElementById("demo").innerHTML =
+        "num1: " + num1 + "<br>" + "num2: " + num2 + "<br>" + "nums: " + nums;
+    </script>
+  </body>
+</html>

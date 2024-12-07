@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <p>The set elements are:</p>
+    <p id="output"></p>
+    <script>
+      const num_set = new Set([10, 20, 20, 20]);
+
+      for (let value of num_set.values()) {
+        document.getElementById("output").innerHTML += value + "<br> ";
+      }
+    </script>
+  </body>
+</html>

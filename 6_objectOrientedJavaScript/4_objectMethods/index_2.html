@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const employee = {
+        name: "John Doe",
+        age: 32,
+        getInfo() {
+          return (
+            "The employee name is " +
+            this.name +
+            " and his age is " +
+            this.age +
+            " Years."
+          );
+        },
+      };
+
+      document.getElementById("output").innerHTML = employee.getInfo();
+    </script>
+  </body>
+</html>

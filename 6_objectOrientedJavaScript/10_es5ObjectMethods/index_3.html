@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const object1 = {};
+
+      Object.defineProperties(object1, {
+        property1: {
+          value: 42,
+          writable: true,
+        },
+        property2: {
+          value: "Tutorials Point",
+          writable: false,
+        },
+      });
+
+      document.getElementById("output").innerHTML =
+        "Property1 : " +
+        object1.property1 +
+        "<br>" +
+        "Property2 : " +
+        object1.property2;
+    </script>
+  </body>
+</html>

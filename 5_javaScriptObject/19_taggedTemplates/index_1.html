@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      function format(str) {
+        return str.join("").toUpperCase();
+      }
+      let res = format`Hi How are you?`;
+      document.getElementById("output").innerHTML = res;
+    </script>
+  </body>
+</html>

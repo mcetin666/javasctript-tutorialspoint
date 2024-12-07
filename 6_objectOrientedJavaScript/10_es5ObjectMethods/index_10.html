@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <script>
+      const person = {
+        age: 21,
+      };
+      document.getElementById("output1").innerHTML = Object.isFrozen(person);
+      // Expected output: false
+      Object.freeze(person);
+      document.getElementById("output2").innerHTML += Object.isFrozen(person);
+      // Expected output: true
+    </script>
+  </body>
+</html>

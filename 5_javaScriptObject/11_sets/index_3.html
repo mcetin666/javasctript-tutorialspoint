@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <p>After deleting elements from the set:</p>
+    <div id="output"></div>
+    <script>
+      let num_set = new Set([100, 200, 300, 400, 500]);
+
+      num_set.delete(200);
+      num_set.delete(400);
+
+      for (let value of num_set.values()) {
+        document.getElementById("output").innerHTML += value + "<br> ";
+      }
+    </script>
+  </body>
+</html>

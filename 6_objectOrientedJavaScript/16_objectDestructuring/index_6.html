@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      const nums = {
+        num1: 10,
+        num2: 20,
+        num3: 30,
+        num4: 40,
+      };
+      const { num1, ...numbers } = nums;
+      output.innerHTML += "num1: " + num1 + "<br>";
+      output.innerHTML += "numbers: " + JSON.stringify(numbers);
+    </script>
+  </body>
+</html>

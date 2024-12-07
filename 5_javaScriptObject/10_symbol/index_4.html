@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="output">The object is:</p>
+    <script>
+      const objId = Symbol();
+      const person = {
+        name: "John Doe",
+        age: 30,
+        [objId]: "abcd123",
+      };
+      document.getElementById("output").innerHTML += JSON.stringify(person);
+    </script>
+  </body>
+</html>

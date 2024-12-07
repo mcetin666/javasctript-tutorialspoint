@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const prototype1 = { name: "John Doe" };
+      const object1 = Object.create(prototype1);
+      const prot = Object.getPrototypeOf(object1);
+      document.getElementById("output").innerHTML = JSON.stringify(prot);
+    </script>
+  </body>
+</html>

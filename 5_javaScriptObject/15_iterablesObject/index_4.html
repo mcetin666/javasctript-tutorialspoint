@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="demo">Iterating the Map: <br /></div>
+    <script>
+      const output = document.getElementById("demo");
+      const map = new Map([
+        ["1", "one"],
+        ["2", "two"],
+        ["3", "three"],
+      ]);
+
+      // Iterating array
+      for (let ele of map) {
+        output.innerHTML += ele + "<br>";
+      }
+    </script>
+  </body>
+</html>

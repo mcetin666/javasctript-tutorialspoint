@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const fruit = {
+        name: "Banana",
+        price: 100,
+      };
+
+      const fruitName = fruit.name;
+      const fruitPrice = fruit["price"];
+
+      document.getElementById("output").innerHTML =
+        "The price of the " + fruitName + " is: " + fruitPrice;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <script>
+      function format(str, ...values) {
+        document.getElementById("output1").innerHTML = values;
+        return str.join(" ") + values[1];
+      }
+      const price = 100;
+      let name = "John";
+      const res = format`Hi,${name} The price is ${price}`;
+      document.getElementById("output2").innerHTML = res;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      const numbers = {
+        num1: 10,
+        num2: 20,
+        num3: 30,
+      };
+      const handler = {
+        set(object, property, value) {
+          if (value > object[property]) {
+            // Validing the new value using the previous value
+            object[property] = value;
+          }
+        },
+      };
+      const numberProxy = new Proxy(numbers, handler);
+      numberProxy.num1 = 20;
+      numberProxy.num2 = 10;
+
+      output.innerHTML += "num1: " + numbers.num1 + ", num2: " + numbers.num2;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const parent = {
+        name: "parent",
+        printMessage() {
+          output.innerHTML = "This is a parent object.<br>";
+        },
+      };
+      const child = {
+        showName() {
+          output.innerHTML += "This is a child object.<br>";
+        },
+      };
+      Object.assign(child, parent); // Mixins
+      child.printMessage(); //Executing the method of parent object using child object
+      child.showName();
+    </script>
+  </body>
+</html>

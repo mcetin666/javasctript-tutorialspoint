@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <p id="output1">Honda Bike Object:</p>
+    <p id="output2">Suzuki Bike Object:</p>
+    <script>
+      // Parent class
+      class Bike {
+        constructor(gears) {
+          this.gears = gears;
+        }
+      }
+      // Child class
+      class Honda extends Bike {
+        constructor(model, gears) {
+          super(gears);
+          this.model = model;
+        }
+      }
+      // Child class
+      class Suzuki extends Bike {
+        constructor(model, color, gears) {
+          super(gears);
+          this.model = model;
+          this.color = color;
+        }
+      }
+      const h_Bike = new Honda("Shine", 5);
+      const s_Bike = new Suzuki("Zx6", "Blue", 6);
+      document.getElementById("output1").innerHTML += JSON.stringify(h_Bike);
+      document.getElementById("output2").innerHTML += JSON.stringify(s_Bike);
+    </script>
+  </body>
+</html>

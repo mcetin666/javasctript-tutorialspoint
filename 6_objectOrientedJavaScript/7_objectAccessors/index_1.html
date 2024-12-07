@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="output">The color of the wall is :</p>
+    <script>
+      const wall = {
+        color: "brown",
+        get getColor() {
+          return this.color;
+        },
+      };
+      document.getElementById("output").innerHTML += wall.getColor;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="output">The laptop price is:</p>
+    <script>
+      const map = new Map();
+      const laptop = {
+        brand: "HP",
+        model: "Pavilion",
+      };
+      map.set(laptop, 100000);
+      document.getElementById("output").innerHTML += map.get(laptop);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="output">The total doors in the Audi Q6 is:</div>
+    <script>
+      const car = {
+        name: "Audi",
+        model: "Q6",
+        price: 7000000,
+      };
+      const model = Reflect.set(car, "doors", 4);
+      document.getElementById("output").innerHTML += car.doors;
+    </script>
+  </body>
+</html>

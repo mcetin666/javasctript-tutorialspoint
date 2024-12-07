@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const animal = {
+        name: "Tiger",
+        info: {
+          legs: 4,
+          tail: 1,
+        },
+      };
+      delete animal.info?.legs;
+      delete animal.sepcs?.tail;
+      document.getElementById("demo").innerHTML =
+        "Updated object is: " + JSON.stringify(animal);
+    </script>
+  </body>
+</html>

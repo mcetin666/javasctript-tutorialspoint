@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output1">The brand of the car is:</div>
+    <div id="output2">The color of the car is:</div>
+    <script>
+      const car = {
+        getBrand() {
+          return "Audi";
+        },
+      };
+      document.getElementById("output1").innerHTML += car.getBrand?.();
+      document.getElementById("output2").innerHTML += car.getColor?.();
+    </script>
+  </body>
+</html>

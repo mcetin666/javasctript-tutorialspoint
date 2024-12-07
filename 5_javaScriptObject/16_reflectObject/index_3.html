@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const car = {
+        name: "Audi",
+        model: "Q6",
+        price: 7000000,
+      };
+      const isName = Reflect.has(car, "name");
+      if (isName) {
+        document.getElementById("output").innerHTML =
+          "The Car object contains the name.";
+      }
+    </script>
+  </body>
+</html>

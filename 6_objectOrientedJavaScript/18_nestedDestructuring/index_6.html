@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const arr = [2, [3, 4], [9, 10]];
+      const [a, [, b], [, c]] = arr;
+      document.getElementById("output").innerHTML =
+        "a = " + a + ", b = " + b + ", c = " + c;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div>Map after deleting the [20,30] key-value pair:</div>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      const map = new Map([
+        [10, 20],
+        [20, 30],
+        [30, 40],
+      ]);
+
+      map.delete(20); // Deleting a [20,30] key-value pair from the map
+
+      for (let [key, value] of map)
+        output.innerHTML += "Key: " + key + " Value: " + value + "<br/>";
+    </script>
+  </body>
+</html>

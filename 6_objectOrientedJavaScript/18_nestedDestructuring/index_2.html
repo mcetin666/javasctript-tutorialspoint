@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const car = {
+        brand: "Hyundai",
+        model: "Verna",
+        info: {
+          price: 1200000, // Nested properties
+          color: "white",
+        },
+      };
+      // Destructuring
+      const {
+        brand: company,
+        model: name,
+        info: { price: cost, color: carColor },
+      } = car;
+
+      document.getElementById(
+        "output"
+      ).innerHTML = `Company: ${company}, Name: ${name}, Cost: ${cost}, Color: ${carColor}`;
+    </script>
+  </body>
+</html>

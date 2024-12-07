@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="output">The laptop price is:</p>
+    <script>
+      const wm = new WeakMap();
+      const laptop = {
+        brand: "HP",
+        model: "Pavilion",
+      };
+      wm.set(laptop, 100000);
+      document.getElementById("output").innerHTML += wm.get(laptop);
+    </script>
+  </body>
+</html>

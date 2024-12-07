@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Nested Template Literals</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const nested = `The subtraction result is: ${
+        2 < 3 ? `${3 - 2}` : `${2 - 3}`
+      }`;
+      document.getElementById("output").innerHTML = nested;
+    </script>
+  </body>
+</html>

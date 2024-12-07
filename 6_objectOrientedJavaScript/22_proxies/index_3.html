@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      const watch = {
+        brand: "Casio",
+        color: "Blue",
+        price: null,
+      };
+      const handler = {
+        set(object, property, value) {
+          if (property === "price") {
+            object[property] = value;
+          } else {
+            object[property] = "Not Available";
+          }
+        },
+      };
+      const wathcProxy = new Proxy(watch, handler);
+      wathcProxy.price = 2000;
+      wathcProxy.dial = "Round";
+      output.innerHTML += "Price: " + wathcProxy.price + "<br>";
+      output.innerHTML += "Dial: " + wathcProxy.dial + "<br>";
+    </script>
+  </body>
+</html>

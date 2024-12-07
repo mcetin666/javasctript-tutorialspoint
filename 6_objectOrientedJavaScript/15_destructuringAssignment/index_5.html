@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const person = {
+        age: 26,
+        name: {
+          fName: "John",
+          lName: "Doe",
+        },
+      };
+      // nested destructuring
+      const {
+        age,
+        name: { fName, lName },
+      } = person;
+      document.getElementById("output").innerHTML =
+        "Person name: " + fName + " " + lName + "<br>" + "Person age: " + age;
+    </script>
+  </body>
+</html>

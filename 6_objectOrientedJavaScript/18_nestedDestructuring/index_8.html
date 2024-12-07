@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const numbers = {
+        num1: 10,
+        num2: [40, 6, 5],
+      };
+      const {
+        num1,
+        num2: [a, b, c],
+      } = numbers;
+      document.getElementById("output").innerHTML =
+        "num1 = " + num1 + ", a = " + a + ", b = " + b + ", c = " + c;
+    </script>
+  </body>
+</html>

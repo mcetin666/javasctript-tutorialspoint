@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p>Company Information</p>
+    <p id="output"></p>
+    <script>
+      const company = {
+        companyName: "Tutorials Point",
+        companyWebsite: "www.tutorialspoint.com",
+
+        getInfo: function () {
+          return (
+            "Comapny Name: " +
+            this.companyName +
+            "<br>Website: " +
+            this.companyWebsite
+          );
+        },
+      };
+      document.getElementById("output").innerHTML = company.getInfo();
+    </script>
+  </body>
+</html>

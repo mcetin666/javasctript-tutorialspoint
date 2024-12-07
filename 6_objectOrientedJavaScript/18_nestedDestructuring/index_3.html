@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const student = {
+        firstName: "Sam",
+        lastName: "Raina",
+        grades: {
+          English: 75,
+        },
+      };
+
+      const {
+        firstName: name = "Jay",
+        lastName: surname = "Shah",
+        grades: { English: eng = 0, Science: sci = 0 },
+      } = student;
+
+      document.getElementById(
+        "output"
+      ).innerHTML = `Name: ${name} <br> Surname: ${surname} <br> English: ${eng} <br> Science: ${sci}`;
+    </script>
+  </body>
+</html>

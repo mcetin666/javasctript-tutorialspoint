@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <p>The Union of set1 and set2 is:</p>
+    <div id="output"></div>
+    <script>
+      const set1 = new Set(["BMW", "Audi", "TATA"]);
+      const set2 = new Set(["BMW", "TaTa", "Honda", "Suzuki"]);
+
+      const union = new Set([...set1, ...set2]); // Taking union
+
+      for (let value of union.values()) {
+        document.getElementById("output").innerHTML += value + "<br> ";
+      }
+    </script>
+  </body>
+</html>

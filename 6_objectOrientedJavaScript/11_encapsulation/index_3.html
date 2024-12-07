@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div id="output1">The initial username is:</div>
+    <div id="output2">The new username is:</div>
+    <script>
+      class User {
+        #username = "Bob";
+        #password = "12345678";
+        #isLoggedIn = false;
+        get username() {
+          return this.#username;
+        }
+
+        set username(user) {
+          this.#username = user;
+        }
+      }
+
+      const user = new User();
+      document.getElementById("output1").innerHTML += user.username;
+      user.username = "Alice";
+      document.getElementById("output2").innerHTML += user.username;
+    </script>
+  </body>
+</html>

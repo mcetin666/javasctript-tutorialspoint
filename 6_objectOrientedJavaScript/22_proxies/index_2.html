@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div id="output1">Brand:</div>
+    <div id="output2">Price:</div>
+    <script>
+      const watch = {
+        brand: "Casio",
+        color: "Blue",
+        price: null,
+      };
+
+      const handler = {
+        get(object, property) {
+          return object[property] != null
+            ? object[property]
+            : "Property is null.";
+        },
+      };
+      const wathcProxy = new Proxy(watch, handler);
+      document.getElementById("output1").innerHTML += wathcProxy.brand;
+      document.getElementById("output2").innerHTML += wathcProxy.price;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const wall = {
+        color: "brown",
+        set setColor(color) {
+          return (this.color = color);
+        },
+      };
+      document.getElementById("output").innerHTML +=
+        "The color of the wall before update is : " + wall.color + "<br>";
+      //updating the color of wall
+      wall.setColor = "Red";
+      document.getElementById("output").innerHTML +=
+        "The color of the wall after update is : " + wall.color;
+    </script>
+  </body>
+</html>

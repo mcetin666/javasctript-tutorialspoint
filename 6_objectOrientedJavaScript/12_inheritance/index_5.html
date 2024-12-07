@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <p id="output">The bike name is:</p>
+    <script>
+      // Parent class
+      class Bike {
+        constructor(gears) {
+          this.gears = gears;
+        }
+
+        static getDefaultBrand() {
+          return "Yamaha";
+        }
+      }
+      // Child class
+      class Honda extends Bike {
+        constructor(model, gears) {
+          super(gears);
+          this.model = model;
+        }
+        static BikeName() {
+          return super.getDefaultBrand() + ", X6";
+        }
+      }
+      document.getElementById("output").innerHTML += Honda.BikeName();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>The object after deleting the "name" property:</p>
+    <p id="output"></p>
+    <script>
+      const fruit = {
+        name: "Watermealon",
+        price: 150,
+      };
+      delete fruit.name;
+      document.getElementById("output").innerHTML = JSON.stringify(fruit);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="output1">The price of the Audi Q6 is:</div>
+    <div id="output2">Total gears in the Audi Q6 is:</div>
+    <script>
+      const car = {
+        brand: "Audi",
+        model: "Q6",
+        info: {
+          price: 5000000,
+          color: "Black",
+        },
+      };
+      document.getElementById("output1").innerHTML += car.info?.price;
+      document.getElementById("output2").innerHTML += car.engine?.gears;
+    </script>
+  </body>
+</html>

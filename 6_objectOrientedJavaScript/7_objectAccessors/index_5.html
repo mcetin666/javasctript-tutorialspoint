@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      const door = {
+        size: 20,
+      };
+      Object.defineProperty(door, "getSize", {
+        get: function () {
+          return this.size;
+        },
+      });
+
+      Object.defineProperty(door, "setSize", {
+        set: function (value) {
+          this.size = value;
+        },
+      });
+
+      output.innerHTML += "Door size is : " + door.getSize + "<br>";
+      door.setSize = 30;
+      output.innerHTML += "Door size after update is : " + door.getSize;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const person = {};
+      Object.preventExtensions(person);
+      try {
+        Object.defineProperty(person, "name", {
+          value: "John Doe",
+        });
+      } catch (e) {
+        document.getElementById("output").innerHTML = e;
+      }
+    </script>
+  </body>
+</html>

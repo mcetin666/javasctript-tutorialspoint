@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      function Book(title, author) {
+        this.title = title;
+        this.author = author;
+      }
+      const myBook = new Book("Perl", "Mohtashim");
+      document.getElementById("output").innerHTML =
+        "Book title is : " +
+        myBook.title +
+        "<br>" +
+        "Book author is : " +
+        myBook.author +
+        "<br>";
+    </script>
+  </body>
+</html>

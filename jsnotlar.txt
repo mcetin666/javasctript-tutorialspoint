@@ -262,3 +262,105 @@ The JavaScript math object provides properties and methods for mathematical cons
 
 A regular expression (RegExp) in JavaScript is an object that describes a pattern of characters. It can contain the alphabetical, numeric, and special characters. Also, the regular expression pattern can have single or multiple characters.
 
+JavaScript Symbol
+In JavaScript, Symbol is a primitive data type and it was introduced in ECMAScript 6 (ES6). It can be created using the 'Symbol' constructor.
+
+Symbols are immutable and unique, unlike to other primitive data types like strings or numbers. They are especially helpful in situations where a unique identifier is required since they offer a way to create private object properties and avoid naming conflicts. Here, we have listed the properties and methods related to the symbol.
+
+A JavaScript Set object is a collection of unique values. Each value can only occur once in a Set. A Set can hold any value of any data type. The sets are introduced to JavaScript in ECMAScript 6 (ES6).
+
+The JavaScript WeakSet object is a collection of objects. The WeakSet is very similar to the Set. The main difference between the WeakSet and Set is that the WeakSet contains only objects, and the Set can also contain the values like numbers, Boolean, string, etc.
+
+A Map object in JavaScript is a collection of key-value pairs where the keys can be of any type, including objects or functions. The order of the map elements is the same as the insertion order of the key-value pairs.
+
+In JavaScript, iterables are objects that can be iterated through using the for...of loop. They can also be iterated over using other methods like forEach(), map(), etc.
+
+JavaScript Reflect
+In JavaScript, Reflect is a global object and was introduced in ECMAScript 6 (ES6). It contains static methods, providing a better way to interact with the object at runtime.
+
+What is a TypedArray?
+A JavaScript TypedArray is an array-like object used to store binary data. Unlike the array, the size of the TypedArray can't be dynamic and can't hold the values of the different data types, improving the performance of the TypedArray.
+
+JavaScript Tempate Literals
+In JavaScript, the template literals are introduced in ES6 to customize the string dynamically. The template literals allow you to add variables or expressions into the string, and the string changes according to the variables and expression value changes.
+
+JavaScript Tagged Templates
+The tagged templates in JavaScript are an advanced version of the template literals. You can define the function to format the string and use it with a template literal to format the string according to the functionality of the function.
+
+JavaScript Objects
+The JavaScript object is a non-primitive data type that is used to store data as key-value pairs. The key-value pairs are often referred as properties. A key in a key-value pair, also called a "property name", is a string and value can be anything. If a property's value is a function, the property is known as a method.
+
+JavaScript Classes
+The JavaScript classes are a blueprint or template for object creation. They encapsulate the data and functions to manipulate that data. We can create the object using classes. Creating an object from a class is referred to as instantiating the class. In JavaScript, the classes are built on prototypes. The classes are introduced to JavaScript in ECMAScript 6 (ES6) in 2009.
+
+JavaScript Object Properties
+An object property in JavaScript is a key: value pair, where key is a string and value can be anything. The key in key: value pair is also called property name. So the properties are association between key (or name) and value.
+
+JavaScript Object Methods
+JavaScript object methods are object properties that contains function definitions. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function; in that case the property is known as a method.
+
+What are Static Methods?
+A static method in JavaScript is defined using the static keyword followed by the method name. You can execute the static method by taking the class name as a reference rather than an instance of the class.
+
+Displaying Objects in JavaScript
+There are different ways to display objects in JavaScript. Using the console.log() method, we can display the object in the web console. Sometimes developers require to display the object properties and their value in the HTML or for debugging the code.
+
+The object accessor properties in JavaScript are methods that get or set the value of an object. They are defined using the get and set keywords. Accessor properties are a powerful way to control how your objects are accessed and modified.
+
+Object Constructors
+An object constructor in JavaScript is a function that creates an instance of a class, which is typically called an object. A constructor is called when you declare an object using the new keyword. The purpose of a constructor is to create an object and set values if there are any object properties present.
+
+Native Prototypes
+The native prototypes in JavaScript are property of Object.prototype object. The prototypes are the mechanism by which the objects inherit features from one another.
+
+The ES5 Object methods in JavaScript are used to manipulate and protect the obejcts. ECMAScript 5 (ES5) is a significant revision of the language introduced in 2009. It has added many object methods to JavaScript.
+
+What is Encapsulation?
+Encapsulation in JavaScript is a way to keep the related properties and methods under a single namespace by bundling them. It can be a function, a class or an object. In JavaScript, the encapsulation can be implemented using closures, classes and getters and setters.
+
+Encapsulation is a fundamental concept in Object-oriented programming languages, along with inheritance and polymorphism. JavaScript is an object oriented programming language.
+
+It is used to hide the data from the outside world and give access to required data only to improve the integrity and security of the data.
+
+Inheritance in JavaScript
+The concept of inheritance in JavaScript allows the child class to inherit the properties and methods of the parent class. Inheritance is also a fundamental concept of object-oriented programming like encapsulation and polymorphism.
+
+Sometimes, you must add the properties and methods of the one class into another. For example, you have created a general class for the bike containing the same properties and methods for each bike. After that, you create a separate class for the bike "Honda", and you need to add all properties and methods to the "Honda" class. You can achieve it using inheritance.
+
+Before ECMAScript 6 (ES6), the object's prototype was used for inheritance, but in ES6, the 'extends' keyword was introduced to inherit classes.
+
+Abstraction in JavaScript
+The Abstraction in JavaScript can be achieved using the abstract class. In object-oriented programming, the abstraction concept allows you to hide the implementation details and expose features only to the users.
+
+For example, you can execute the Math object methods in JavaScript by accessing the method using its name but can’t see how it is implemented. Same way array methods like push(), pop(), etc., can be executed, but you don’t know how it is implemented internally.
+
+So, the abstraction makes code cleaner by exposing the required features and hiding the internal implementation details.
+
+Polymorphism in JavaScript
+The polymorphism in JavaScript allows you to define multiple methods with the same name and different functionalities. Polymorphism is achieved by using method overloading and overriding. JavaScript does not support method overloading natively. Method overriding allows a subclass or child class to redefine a method of superclass or parent class. In this chapter, we will implement the polymorphism using the concept of method overriding.
+
+The polymorphism word is derived from the geek word polymorph. If you break the polymorph, the meaning of the 'poly' means many, and 'morph' means transforming from one state to another state.
+
+Destructuring Assignment
+In JavaScript, the destructuring assignment is an expression that allows us to unpack the values from the arrays or objects and store them in individual variables. It is a technique to assign array values or object properties to the variables.
+
+Object Destructuring
+The object destructuring assignments are JavaScript expressions that allow you to unpack and assign object properties into individual variables. The name of the individual variables can be the same as the object properties or different.
+
+Array Destructuring
+JavaScript Array destructuring allows us to unpack the values from array and assign them to the variables. After that, you can use the variables to access their value and use them in the code. We can perform the array structuring using the destructuring assignment. The destructuring assignment is a basically a JavaScript expression.
+
+Nested Destructuring
+The Nested Destructuring in JavaScript allows us to extract data from nested objects and arrays. An object (or array) can contain another object (or array) inside itself, known as a nested object (or array). Unpacking the nested objects or arrays is called nested destructuring. We can extract all or some data from the objects or arrays using destructuring.
+
+The optional chaining in JavaScript allows you to access nested properties and methods of an object without checking if each property exists. This can help to make your code more concise and easier to read.
+
+Global Objects in JavaScript
+The JavaScript global object allows you to access the variables, functions, objects, etc., defined in the global scope and available everywhere in the code.
+
+Mixins in JavaScript
+The mixins in JavaScript allow you to add the properties of the other objects or classes to the target object's or class's prototype and extend the functionality of the target object. After that, you can access the other object's method using the target object.
+
+Proxy in JavaScript
+The JavaScript proxies are objects that allow you to wrap a particular object and customize the fundamental operations of the object, like getting and setting object properties. In short, using the proxy object, you can add custom behavior to the object. The proxies are used to implement features such as logging, caching, and securities.
+

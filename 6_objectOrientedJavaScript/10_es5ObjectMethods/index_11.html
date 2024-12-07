@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <script>
+      const person = {
+        name: "John Doe",
+      };
+      document.getElementById("output1").innerHTML = Object.isFrozen(person);
+      // Expected output: false
+      Object.seal(person);
+      document.getElementById("output2").innerHTML += Object.isSealed(person);
+      // Expected output: true
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="output">The obj object is -</div>
+    <script>
+      const car = {
+        brand: "Tata",
+        model: "Nexon",
+        price: 1000000,
+      };
+
+      Object.defineProperty(car, "gears", {
+        value: 6,
+        writable: true,
+        enumerable: true,
+        configurable: true,
+      });
+
+      document.getElementById("output").innerHTML += JSON.stringify(car);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div>Map elements are:</div>
+    <div id="output"></div>
+    <script>
+      const map = new Map([
+        ["Apple", 100],
+        ["Banana", 20],
+        ["Orange", 50],
+      ]);
+      for (let [key, value] of map) {
+        document.getElementById("output").innerHTML += `${key} : ${value} <br>`;
+      }
+    </script>
+  </body>
+</html>

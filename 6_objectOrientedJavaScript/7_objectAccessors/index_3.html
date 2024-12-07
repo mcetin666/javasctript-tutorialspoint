@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const wall = {
+        color: "brown",
+        get getColor() {
+          return this.color;
+        },
+        colorMethod: function () {
+          return this.color;
+        },
+      };
+
+      document.getElementById("output").innerHTML +=
+        "Getting the color using the getters : " + wall.getColor + "<br>";
+
+      document.getElementById("output").innerHTML +=
+        "Getting the color using the object method : " + wall.colorMethod();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const wall = {
+        color: "Brown",
+        get getColor() {
+          return this.color.toUpperCase();
+        },
+      };
+      document.getElementById("output").innerHTML +=
+        "Getting the color using the getters : " + wall.getColor;
+    </script>
+  </body>
+</html>

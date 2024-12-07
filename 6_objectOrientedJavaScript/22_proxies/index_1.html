@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <div id="demo1">The name of the person is:</div>
+    <div id="demo2">The height of the person is:</div>
+    <script>
+      const person = {
+        name: "Same",
+        age: 32,
+      };
+      const handler = {
+        // Defining the getters
+        get: function (object, property) {
+          return object[property]
+            ? object[property]
+            : "Object doesnt contain the property.";
+        },
+      };
+      const proxyObj = new Proxy(person, handler);
+      document.getElementById("demo1").innerHTML += proxyObj.name;
+      document.getElementById("demo2").innerHTML += proxyObj.height;
+    </script>
+  </body>
+</html>

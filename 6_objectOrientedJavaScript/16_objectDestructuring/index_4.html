@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <p id="output1">Animal Name:</p>
+    <p id="output2">Animal Color:</p>
+    <script>
+      const animal = {
+        name: "Lion",
+        age: 10,
+      };
+      const { name = "Tiger", color = "Yellow" } = animal;
+      document.getElementById("output1").innerHTML += name;
+      document.getElementById("output2").innerHTML += color;
+    </script>
+  </body>
+</html>

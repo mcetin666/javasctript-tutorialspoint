@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const obj = {
+        property: 34,
+      };
+
+      Object.seal(obj);
+      obj.property = 33;
+      document.getElementById("output").innerHTML = obj.property;
+
+      delete obj.property; // Cannot delete when sealed
+
+      document.getElementById("output").innerHTML = obj.property;
+    </script>
+  </body>
+</html>

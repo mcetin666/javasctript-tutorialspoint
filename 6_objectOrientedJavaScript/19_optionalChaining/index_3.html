@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output1">Total number of legs of the tiger is:</div>
+    <div id="output2">The color of the tiger is:</div>
+    <script>
+      const animal = {
+        name: "Tiger",
+        info: {
+          legs: 4,
+          tail: 1,
+        },
+      };
+      document.getElementById("output1").innerHTML += animal.info?.["legs"];
+      document.getElementById("output2").innerHTML += animal.specs?.["color"];
+    </script>
+  </body>
+</html>

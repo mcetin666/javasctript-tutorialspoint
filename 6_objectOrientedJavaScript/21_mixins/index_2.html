@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const animal = {
+        eats: true,
+        run() {
+          output.innerHTML += "Animals run. <br>";
+        },
+      };
+
+      class cat {
+        constructor() {
+          this.name = "Cat";
+        }
+      }
+      Object.assign(cat.prototype, animal); // Mixins
+      const catObj = new cat();
+      output.innerHTML += "Cat eats: " + catObj.eats + "<br>";
+      catObj.run();
+    </script>
+  </body>
+</html>

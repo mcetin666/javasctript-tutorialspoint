@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const object1 = {
+        property1: 42,
+      };
+
+      const descriptor1 = Object.getOwnPropertyDescriptor(object1, "property1");
+
+      document.getElementById("output").innerHTML =
+        "descriptor configurable? : " +
+        descriptor1.configurable +
+        "<br>" +
+        "descriptor value : " +
+        descriptor1.value;
+    </script>
+  </body>
+</html>

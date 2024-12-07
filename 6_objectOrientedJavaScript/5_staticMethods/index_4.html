@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="output">The square root of the 10 is:</p>
+    <script>
+      class Num {
+        constructor(a) {
+          // Static method execution
+          this.sqrt = this.constructor.getSqrt(a);
+        }
+
+        static getSqrt(a) {
+          return a * a;
+        }
+      }
+      const num1 = new Num(10);
+      document.getElementById("output").innerHTML += num1.sqrt;
+    </script>
+  </body>
+</html>

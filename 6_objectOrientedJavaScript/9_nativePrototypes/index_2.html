@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <p id="output">After updating the string.toLowerCase() method:</p>
+    <script>
+      String.prototype.toLowerCase = function () {
+        return this.toUpperCase();
+      };
+      let str = "Hello World";
+      document.getElementById("output").innerHTML += str.toLowerCase();
+    </script>
+  </body>
+</html>

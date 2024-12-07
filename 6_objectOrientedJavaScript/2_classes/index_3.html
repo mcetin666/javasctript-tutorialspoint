@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      class Car {
+        constructor(brand, model, price, year) {
+          this.brand = brand;
+          this.model = model;
+          this.price = price;
+          this.year = year;
+        }
+      }
+      const carObj = new Car("BMW", "X5", 9800000, 2019);
+      document.getElementById("output").innerHTML +=
+        "Car brand : " +
+        carObj.brand +
+        "<br>" +
+        "Car model : " +
+        carObj.model +
+        "<br>" +
+        "Car price : " +
+        carObj.price +
+        "<br>" +
+        "Car year : " +
+        carObj.year +
+        "<br>";
+    </script>
+  </body>
+</html>

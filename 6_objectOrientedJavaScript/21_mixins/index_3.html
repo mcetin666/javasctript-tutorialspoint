@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      const eat = {
+        eatFood() {
+          output.innerHTML += "Person is eating the food! <br>";
+        },
+      };
+      const drink = {
+        drinkWater() {
+          output.innerHTML += "Person is drinking water! <br>";
+        },
+      };
+      const person = {
+        name: "John",
+      };
+      Object.assign(person, eat, drink); // Mutiple Mixins
+      person.eatFood();
+      person.drinkWater();
+    </script>
+  </body>
+</html>

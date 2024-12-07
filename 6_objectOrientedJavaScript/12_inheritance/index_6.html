@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <p id="output1">Bike brand:</p>
+    <p id="output2">Bike Price:</p>
+    <script>
+      function Bike(brand) {
+        this.brand = brand;
+      }
+      Bike.prototype.getBrand = function () {
+        return this.brand;
+      };
+      //Another constructor function
+      function Vehicle(price) {
+        this.price = price;
+      }
+      const newBike = new Bike("Yamaha");
+      Vehicle.prototype = newBike; //Now Bike treats as a parent of Vehicle.
+      const vehicle = new Vehicle(100000);
+
+      document.getElementById("output1").innerHTML += vehicle.getBrand();
+      document.getElementById("output2").innerHTML += vehicle.price;
+    </script>
+  </body>
+</html>

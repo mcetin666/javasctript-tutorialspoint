@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+
+      function Person(id, name) {
+        this.id = id;
+        this.name = name;
+      }
+      Person.prototype.display = function () {
+        output.innerHTML += this.id + ", " + this.name + "<br>";
+      };
+      const p1 = new Person(1, "James");
+      const p2 = new Person(2, "Nayan");
+      p1.display();
+      p2.display();
+    </script>
+  </body>
+</html>

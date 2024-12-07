@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="output1">The laptop price is:</div>
+    <div id="output2">The laptop price after deletion is:</div>
+    <script>
+      const wm = new WeakMap();
+      const laptop = {
+        brand: "HP",
+        model: "Pavilion",
+      };
+      wm.set(laptop, 100000);
+      document.getElementById("output1").innerHTML += wm.get(laptop);
+
+      wm.delete(laptop);
+      document.getElementById("output2").innerHTML += wm.get(laptop);
+    </script>
+  </body>
+</html>

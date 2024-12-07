@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p>Displaying the object entries</p>
+    <p id="output"></p>
+    <script>
+      const numbers = {
+        num1: 10,
+        num2: 20,
+        num3: 30,
+        num4: 40,
+      };
+
+      for (const [key, value] of Object.entries(numbers)) {
+        document.getElementById("output").innerHTML +=
+          key + ": " + value + " <br>";
+      }
+    </script>
+  </body>
+</html>

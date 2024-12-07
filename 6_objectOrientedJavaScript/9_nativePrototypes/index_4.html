@@ -1,0 +1,18 @@
+<html>
+<body>
+   <p id = "output"> </p>
+    <script>
+        function Person(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        Person.prototype.name = "John";
+        Person.prototype.age = 20;
+
+        const p1 = new Person(1, "Adam");
+        document.getElementById("output").innerHTML = 
+      "Id: " + p1.id + ", Name: " + p1.name + ", Age: " + p1.age;
+  </script>
+</body>
+</html>

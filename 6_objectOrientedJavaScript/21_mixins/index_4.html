@@ -1,0 +1,58 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let output = document.getElementById("demo");
+      // Parent class
+      class Entity {
+        state() {
+          return "It is in the idle state!";
+        }
+      }
+      // Child class
+      class Human extends Entity {
+        walk() {
+          return "walking on the field.";
+        }
+      }
+      // Custom functionalities
+      function Driver(parentClass) {
+        return class extends parentClass {
+          drive() {
+            return "driving on the road";
+          }
+        };
+      }
+      function Swimmer(parentClass) {
+        return class extends parentClass {
+          swim() {
+            return "swimming in water";
+          }
+        };
+      }
+      // Some other classes
+      class Person extends Driver(Human) {}
+      class Mechanic extends Driver(Entity) {}
+      class SwimmerPerson extends Swimmer(Person) {}
+      // Objects of classes
+      const person = new Person();
+      const personDrive = person.drive();
+      const mechanic = new Mechanic();
+      const mechanicDrive = mechanic.drive();
+
+      const swimmerPerson = new SwimmerPerson();
+      const swimmerDrive = swimmerPerson.drive();
+      const swimmerSwim = swimmerPerson.swim();
+
+      // Printing outputs
+      output.innerHTML += "State of the PERSON: " + personDrive + "<br>";
+      output.innerHTML += "State of the MECHANIC: " + mechanicDrive + "<br>";
+      output.innerHTML +=
+        "State of the SWIMMER PERSON: " +
+        swimmerDrive +
+        ", " +
+        swimmerSwim +
+        "<br>";
+    </script>
+  </body>
+</html>

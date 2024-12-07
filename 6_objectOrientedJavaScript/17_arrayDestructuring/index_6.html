@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let a = 50,
+        b = 100;
+      document.getElementById("output").innerHTML =
+        "Before Swapping: a = " + a + ", b = " + b + "<br>";
+      [b, a] = [a, b];
+      document.getElementById("output").innerHTML +=
+        "After Swapping: a = " + a + ", b = " + b;
+    </script>
+  </body>
+</html>

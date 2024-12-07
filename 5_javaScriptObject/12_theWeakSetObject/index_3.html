@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const car = {
+        brand: "Audi",
+        model: "Q5",
+      };
+      const carWeakSet = new WeakSet([car]);
+      const flag = carWeakSet.delete(car); // returns true if deleted successfully
+      output.innerHTML =
+        "The car object is deleted successfully from the carWeakSet? " + flag;
+    </script>
+  </body>
+</html>

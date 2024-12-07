@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const myBook = Object.create(
+        {},
+        {
+          title: { value: "Perl" },
+          author: { value: "Mohtashim" },
+        }
+      );
+
+      document.getElementById("output").innerHTML =
+        "Book title is : " +
+        myBook.title +
+        "<br>" +
+        "Book author is : " +
+        myBook.author +
+        "<br>";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+      };
+
+      const student = Object.create(person);
+      student.age = 18;
+
+      document.getElementById("output").innerHTML =
+        student.firstName + "<br>" + student.lastName + "<br>" + student.age;
+    </script>
+  </body>
+</html>

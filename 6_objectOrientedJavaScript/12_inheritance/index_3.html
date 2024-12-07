@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      // Parent class
+      class Bike {
+        constructor(gears) {
+          this.gears = gears;
+        }
+      }
+      // Child class
+      class Honda extends Bike {
+        constructor(brand, gears) {
+          super(gears);
+          this.brand = brand;
+        }
+      }
+      class Shine extends Honda {
+        constructor(model, brand, gears) {
+          super(brand, gears);
+          this.model = model;
+        }
+      }
+      const newBike = new Shine("Shine", "Honda", 5);
+      document.getElementById(
+        "output"
+      ).innerHTML = `The ${newBike.model} model of the ${newBike.brand} brand has total ${newBike.gears} gears.`;
+    </script>
+  </body>
+</html>

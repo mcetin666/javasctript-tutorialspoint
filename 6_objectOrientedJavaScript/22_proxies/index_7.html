@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const emails = {
+        email1: "abcd@gmail.com",
+      };
+      // Function to validate the email
+      function emailValidator(email) {
+        if (email.includes("@")) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      const handler = {
+        set(object, property, value) {
+          if (emailValidator(value)) {
+            object[property] = value;
+          }
+        },
+      };
+      const emailProxy = new Proxy(emails, handler);
+      emailProxy.email1 = "nmc@gmail.com";
+      document.getElementById("output").innerHTML =
+        "email1: " + emailProxy.email1;
+    </script>
+  </body>
+</html>

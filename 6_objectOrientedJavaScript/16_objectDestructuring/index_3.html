@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="output1">brand:</p>
+    <p id="output2">color:</p>
+    <p id="output3">dial:</p>
+    <script>
+      const watch = {
+        brand: "Titan",
+        color: "Pink",
+        dial: "Round",
+      };
+      const { brand: bd, color: cr, dial: dl } = watch;
+
+      document.getElementById("output1").innerHTML += bd;
+      document.getElementById("output2").innerHTML += cr;
+      document.getElementById("output3").innerHTML += dl;
+    </script>
+  </body>
+</html>

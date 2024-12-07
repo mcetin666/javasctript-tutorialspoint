@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const obj = {
+        prop: 23,
+      };
+
+      Object.freeze(obj);
+      // obj.prop = 33;
+      // Throws an error in strict mode
+      document.getElementById("output").innerHTML = obj.prop;
+    </script>
+  </body>
+</html>

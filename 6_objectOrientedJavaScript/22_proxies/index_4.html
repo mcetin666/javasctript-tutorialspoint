@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const watch = {
+        brand: "Casio",
+        color: "Blue",
+        price: 2000,
+      };
+      const getWatchDetails = function (watch) {
+        return `Brand: ${watch.brand},  
+         Color: ${watch.color}, 
+         price: ${watch.price}`;
+      };
+      const getDetails = new Proxy(getWatchDetails, {
+        apply(target, thisArg, args) {
+          return target(...args).toUpperCase();
+        },
+      });
+      document.getElementById("output").innerHTML += getDetails(watch);
+    </script>
+  </body>
+</html>

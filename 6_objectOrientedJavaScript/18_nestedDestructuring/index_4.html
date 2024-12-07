@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const student = {
+        firstName: "Kunal",
+        lastName: "Karma",
+        grades: {
+          English: 75,
+          Maths: 87,
+          SocialScience: 90,
+          Science: 80,
+        },
+      };
+      const {
+        firstName,
+        lastName,
+        grades: { Maths, ...allGrades },
+      } = student;
+      document.getElementById(
+        "output"
+      ).innerHTML = `firstName: ${firstName} <br>
+         lastName: ${lastName} <br>
+         Maths: ${Maths} <br>
+         allGrades: ${JSON.stringify(allGrades)} <br>
+         `;
+    </script>
+  </body>
+</html>

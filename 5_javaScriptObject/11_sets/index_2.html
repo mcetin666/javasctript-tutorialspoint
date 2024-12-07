@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <p>Set elements after adding element/s to it:</p>
+    <div id="output"></div>
+    <script>
+      const num_set = new Set();
+      num_set.add(60);
+      num_set.add(50);
+      num_set.add(50);
+
+      for (let value of num_set.values()) {
+        document.getElementById("output").innerHTML += value + "<br> ";
+      }
+    </script>
+  </body>
+</html>

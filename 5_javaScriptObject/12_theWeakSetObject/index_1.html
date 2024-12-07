@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      const obj1 = {};
+      const obj2 = {};
+      const weak_set = new WeakSet([obj1, obj2]);
+
+      if (weak_set.has(obj1)) {
+        output.innerHTML += "The weak_set contains the obj1 object! <br>";
+      }
+
+      if (weak_set.has(obj2)) {
+        output.innerHTML += "The weak_set contains the obj2 object! <br>";
+      }
+    </script>
+  </body>
+</html>

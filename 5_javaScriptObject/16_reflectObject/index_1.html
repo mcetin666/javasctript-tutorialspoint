@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output">The model of the car is:</div>
+    <script>
+      const car = {
+        name: "Audi",
+        model: "Q6",
+        price: 7000000,
+      };
+      let prop = "model";
+      let model = Reflect.get(car, prop);
+      document.getElementById("output").innerHTML += model;
+    </script>
+  </body>
+</html>

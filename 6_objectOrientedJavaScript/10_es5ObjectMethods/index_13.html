@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <script>
+      const person = {
+        name: "John Doe",
+      };
+
+      document.getElementById("output1").innerHTML =
+        Object.isExtensible(person);
+      // Expected output: false
+      Object.preventExtensions(person);
+      document.getElementById("output2").innerHTML +=
+        Object.isExtensible(person);
+      // Expected output: false
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Iterating the obejct properties</p>
+    <p id="output"></p>
+    <script>
+      const table = {
+        color: "brown",
+        shape: "round",
+        price: 10000,
+      };
+
+      for (let key in table) {
+        document.getElementById("output").innerHTML +=
+          key + ": " + table[key] + "<br>";
+      }
+    </script>
+  </body>
+</html>

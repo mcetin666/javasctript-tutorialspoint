@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      const numbers = {
+        num1: 10,
+        num2: 20,
+        num3: 30,
+      };
+      const handler = {
+        set(object, property, value) {
+          output.innerHTML += "Object is read-only.<br>";
+        },
+      };
+      const numberProxy = new Proxy(numbers, handler);
+      numberProxy.num1 = 20;
+      output.innerHTML += "num1: " + numberProxy.num1;
+    </script>
+  </body>
+</html>
