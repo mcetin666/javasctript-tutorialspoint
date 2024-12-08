@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p>Click "Load Previous Page" button to load previous visited page</p>
+    <button onclick="goback()">Load Previous Page</button>
+    <p id="output"></p>
+    <script>
+      function goback() {
+        history.back();
+        document.getElementById("output").innerHTML +=
+          "You will have gone to previous visited page if it exists";
+      }
+    </script>
+  </body>
+</html>

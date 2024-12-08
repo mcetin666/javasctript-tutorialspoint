@@ -448,3 +448,54 @@ The JavaScript Fetch API is a web API that allows a web browser to make HTTP req
 Geolocation API
 The Geolocation API is a web API that provides a JavaScript interface to access the user's geographical location data. A Geolocation API contains the various methods and properties that you can use to access the user's location on your website.
 
+What is an Event ?
+JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.
+
+When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.
+
+The DOM events are actions that can be performed on HTML elements. When an event occurs, it triggers a JavaScript function. This function can then be used to change the HTML element or perform other actions.
+
+The JavaScript addEventListener() method is used to attach an event handler function to an HTML element. This allows you to specify a function that will be executed when a particular event occurs on the specified element.
+
+JavaScript mouse events allow users to control and interact with web pages using their mouse. These events trigger specific functions or actions in response to user clicks, scrolls, drags, and other mouse movements.
+
+The keyboard events in JavaScript provide a way to interact with a web page or application based on the user's keyboard input. These events allow developers to capture and respond to various keyboard actions, such as key presses, key releases, and character inputs. The primary keyboard events in JavaScript include keydown, keypress, and keyup.
+
+Form Events
+The form events in JavaScript are events that are associated with HTML forms. These events are triggered by user actions when interacting with form elements like text fields, buttons, checkboxes, etc. Form events allow you to execute JavaScript code in response to these actions, enabling you to validate form data, perform actions on form submission or reset, and enhance the user experience.
+
+JavaScript window events are actions that occur when the user does something affecting the entire browser window, like loading, resizing, closing, or moving the window. The most common window event is simply loading the window by opening a particular web page. This event is handled by the onload event handler.
+
+Event delegation in JavaScript is a technique that allows us to attach a single event listener to a parent element, and then use the event object to determine which child element triggered the event. This way, we can handle multiple events with a single event listener, and avoid adding too many event listeners to the DOM.
+
+Event Bubbling
+Event bubbling is a concept in JavaScript that refers to the order in which events are handled as they propagate through the DOM (Document Object Model) hierarchy. When an event occurs on a particular element, such as a click or a keypress, it can trigger handlers not only on that specific element but also on its ancestors in the DOM tree.
+
+Event Capturing
+Event capturing in JavaScript is the initial phase in the event propagation model where the event travels from the root of the document tree down to the target element. During this phase, the browser captures the event on the ancestors of the target element before reaching the target itself.
+
+Custom Events
+The custom events in JavaScript define and handle custom interactions or signals within an application. They establish a communication mechanism between various sections of your code: one part can notify others about specific occurrences or changes; thus enhancing the functionality of your program.
+
+Error handling in JavaScript is a process to detect and handle errors that occurs during the execution of a program. Errors can be a syntax, runtime or logical errors. An error occurred during the execution of the program is called a runtime error or an exception.
+
+JavaScript try...catch Statement
+The try-catch statement in JavaScript is used to handle the runtime errors (exceptions). This is very common in most programming languages to handle exceptions. A try-catch statement can handle only runtime errors. The try block must be followed by either exactly one catch block or one finally block (or one of both).
+
+What is Debugging?
+Debugging in JavaScript is a process of examining JavaScript code and finding erros and fixing them. Every now and then, developers commit mistakes while coding. This error can be logical, syntax, or runtime errors. An error in a program or a script is referred to as a bug.
+
+Custom errors are a way to create user-defined error types in JavaScript. This can be useful for handling specific types of errors, such as database errors or HTTP errors.
+
+The custom errors in JavaScript are errors that you create yourself, as opposed to the built-in errors that JavaScript throws. You can create custom errors to handle specific types of errors that may occur in your code.
+
+What is 'this' keyword?
+In JavaScript, the 'this' keyword contains the reference to the object. It represents the context of the function or current code. It is used to access the properties and methods of the current object.
+
+The void keyword in JavaScript is used as an operator that evaluates a given expression and returns undefined. The void is an important keyword in JavaScript. The meaning of the void is null or empty.
+
+The new keyword in JavaScript is used to create an instance of the object that has constructor function. Using new keyword, we can create the instances of a user-defined as well as built-in object types. We can create instances of the classes, prototype, or constructor functions.
+
+The var keyword in JavaScript is used to declare variables. Before ES6, there was only var keyword to declare a variable. In ES6, let and const keywords were introduced as a better way to declare variables. It is advised to use let instead of var to declare a variable. If you are targeting older version of browser, you can use var.
+
+

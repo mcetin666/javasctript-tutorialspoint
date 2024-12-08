@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <button onclick="startWorker()">Start Counter</button>
+    <button onclick="stopWorker()">Stop Counter</button>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      let workerObj;
+      function startWorker() {
+        if (typeof Worker !== "undefined") {
+          if (typeof workerObj === "undefined") {
+            workerObj = new Worker("app.js");
+            workerObj.onmessage = function (event) {
+              //Getting the message from web worker
+              output.innerHTML += "Event data is: " + event.data + "<br>";
+            };
+          }
+        } else {
+          output.innerHTML += "Web worker is not supported by your browser.";
+        }
+      }
+      function stopWorker() {
+        // To stop the web worker.
+        if (typeof workerObj !== "undefined") {
+          workerObj.terminate();
+          workerObj = undefined;
+        }
+      }
+    </script>
+  </body>
+</html>

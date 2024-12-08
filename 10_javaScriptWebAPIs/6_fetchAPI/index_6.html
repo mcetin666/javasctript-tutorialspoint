@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      let options = {
+        method: "DELETE", // To Delete the record
+      };
+      let URL = " https://dummy.restapiexample.com/api/v1/delete/2";
+      fetch(URL, options)
+        .then((res) => res.json()) // After deleting data, getting response
+        .then((res) => {
+          output.innerHTML +=
+            "The status of the request is : " + res.status + "<br>";
+          output.innerHTML +=
+            "The message returned from the API is : " + res.message + "<br>";
+          output.innerHTML += "The data added is - " + JSON.stringify(res.data);
+        })
+        .catch((err) => {
+          output.innerHTML +=
+            "The error returned from the API is : " + JSON.stringify(err);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <p>Click the below button to get the lenght of history list</p>
+    <button onclick="moveTo()">Get Lenght of History List</button>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      function moveTo() {
+        output.innerHTML = history.length;
+      }
+    </script>
+  </body>
+</html>

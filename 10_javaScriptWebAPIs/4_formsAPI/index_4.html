@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <form>
+      <label> Enter any text: </label>
+      <input type="text" id="str" required /> <br />
+      <br />
+      <button type="button" onclick="validateText()">Validate Text</button>
+    </form>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      function validateText() {
+        const strInput = document.getElementById("str");
+        if (strInput.validity.valueMissing) {
+          output.innerHTML = "Please enter a value.";
+        } else {
+          output.innerHTML = "You have entered " + strInput.value + ".";
+        }
+      }
+    </script>
+  </body>
+</html>

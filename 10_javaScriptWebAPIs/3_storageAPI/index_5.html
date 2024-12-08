@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <h2>Upload image of size less than 5 MB</h2>
+    <input
+      type="file"
+      id="image"
+      accept="image/*"
+      onchange="handleImageUpload()"
+    />
+    <div id="output"></div>
+    <br />
+    <button onclick="getImage()">Get Image</button>
+    <script>
+      // To handle image upload
+      function handleImageUpload() {
+        const image = document.getElementById("image");
+        const output = document.getElementById("output");
+        const file = image.files[0];
+        // Read Image file
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (event) {
+            const data = event.target.result;
+            // Storing the image data in sessionStorage
+            sessionStorage.setItem("image", data);
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+      // Function to get image
+      function getImage() {
+        let data = sessionStorage.getItem("image");
+        output.innerHTML = `<img src="${data}" alt="Uploaded Image" width="300">`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <button onclick="setItem()">Set Item</button>
+    <button onclick="getItem()">Get Item</button>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function setItem() {
+        const animal = {
+          name: "Lion",
+          color: "Yellow",
+          food: "Non-vegetarian",
+        };
+        localStorage.setItem("animal", JSON.stringify(animal));
+      }
+
+      function getItem() {
+        const animal = localStorage.getItem("animal");
+        output.innerHTML = "The animal object is: " + animal;
+      }
+    </script>
+  </body>
+</html>

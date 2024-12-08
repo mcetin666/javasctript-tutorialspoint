@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      async function getData() {
+        let output = document.getElementById("output");
+        let URL = "https://jsonplaceholder.typicode.com/todos/6";
+        let data = await fetch(URL);
+        data = await data.json();
+        output.innerHTML += "The data from the API is: " + "<br>";
+        output.innerHTML += JSON.stringify(data);
+      }
+      getData();
+    </script>
+  </body>
+</html>

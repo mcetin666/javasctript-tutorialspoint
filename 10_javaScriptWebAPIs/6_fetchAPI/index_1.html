@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      const URL = "https://jsonplaceholder.typicode.com/todos/5";
+      fetch(URL)
+        .then((res) => res.json())
+        .then((data) => {
+          output.innerHTML += "The data from the API is: " + "<br>";
+          output.innerHTML += JSON.stringify(data);
+        });
+    </script>
+  </body>
+</html>

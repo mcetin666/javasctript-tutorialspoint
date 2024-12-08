@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <button onclick="findLocation()">Find Location</button>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      function findLocation() {
+        if (navigator.geolocation) {
+          let id = navigator.geolocation.watchPosition(getCoords);
+          setTimeout(function () {
+            navigator.geolocation.clearWatch(id);
+            output.innerHTML += "<br>Tracking stopped!";
+          }, 30000); // Stop tracking after 30 seconds.
+        } else {
+          output.innerHTML +=
+            "<br>Geo Location is not supported by this browser!";
+        }
+      }
+      // Callback function
+      function getCoords(location) {
+        let latitude = location.coords.latitude;
+        let longitude = location.coords.longitude;
+        output.innerHTML += `<br> Latitude: ${latitude}, Longitude: ${longitude}`;
+      }
+    </script>
+  </body>
+</html>

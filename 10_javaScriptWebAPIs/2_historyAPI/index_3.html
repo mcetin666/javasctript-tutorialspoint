@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p>Click "Load Next Page" button to load next visited page</p>
+    <button onclick="goForward()">Load Next Page</button>
+    <p id="output"></p>
+    <script>
+      function goForward() {
+        history.forward();
+        document.getElementById("output").innerHTML =
+          "You will have forwarded to next visited page if it exists.";
+      }
+    </script>
+  </body>
+</html>

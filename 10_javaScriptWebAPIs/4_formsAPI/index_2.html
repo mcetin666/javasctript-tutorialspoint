@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <form>
+      <label> Enter your age: </label>
+      <input type="number" id="age" required /> <br />
+      <br />
+      <button type="button" onclick="validateAge()">Validate Age</button>
+    </form>
+    <div id="message"></div>
+    <script>
+      function validateAge() {
+        const ageInp = document.getElementById("age");
+        const output = document.getElementById("message");
+        const age = parseInt(ageInp.value);
+        if (isNaN(age)) {
+          ageInp.setCustomValidity("Please enter a valid number.");
+        } else if (age < 18) {
+          ageInp.setCustomValidity("You must be at least 18 years old.");
+        } else {
+          ageInp.setCustomValidity(""); // To remove custom error message
+          output.innerHTML = "Age is valid!";
+        }
+
+        ageInp.reportValidity(); // To display custom validation message
+      }
+    </script>
+  </body>
+</html>

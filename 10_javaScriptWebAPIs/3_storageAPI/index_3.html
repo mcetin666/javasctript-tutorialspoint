@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <button onclick="getItem()">Get Item</button>
+    <button onclick="removeItem()">Remvoe Item</button>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      localStorage.setItem("name", "John");
+      function getItem() {
+        output.innerHTML =
+          "The name of the person is: " + localStorage.getItem("name");
+      }
+      function removeItem() {
+        localStorage.removeItem("name");
+        output.innerHTML =
+          "Name removed from local storage. Now, you can't get it.";
+      }
+    </script>
+  </body>
+</html>

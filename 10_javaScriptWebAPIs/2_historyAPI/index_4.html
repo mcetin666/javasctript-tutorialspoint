@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p>Click the below button to load next 2nd visited page</p>
+    <button onclick="moveTo()">Load 2nd Next Page</button>
+    <p id="output"></p>
+    <script>
+      function moveTo() {
+        history.go(2);
+        document.getElementById("output").innerHTML =
+          "You will have forwarded to 2nd next visited page if it exists.";
+      }
+    </script>
+  </body>
+</html>

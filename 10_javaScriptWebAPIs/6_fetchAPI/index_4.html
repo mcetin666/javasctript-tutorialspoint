@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      let employee = {
+        emp_name: "Sachin",
+        emp_age: "30",
+      };
+      let options = {
+        method: "POST", // To make a post request
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(employee),
+      };
+      let URL = "https://dummy.restapiexample.com/api/v1/create";
+      fetch(URL, options)
+        .then((res) => res.json()) // Getting response
+        .then((res) => {
+          output.innerHTML +=
+            "The status of the request is : " + res.status + "<br>";
+          output.innerHTML +=
+            "The message returned from the API is : " + res.message + "<br>";
+          output.innerHTML += "The data added is : " + JSON.stringify(res.data);
+        })
+        .catch((err) => {
+          output.innerHTML +=
+            "The error returned from the API is : " + JSON.stringify(err);
+        });
+    </script>
+  </body>
+</html>
