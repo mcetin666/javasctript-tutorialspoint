@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      let output = document.getElementById("demo");
+      const num = 10;
+      const promise = new Promise((resolve, reject) => {
+        resolve("Promise is resolved successfully!");
+      });
+      promise
+        .then((message) => {
+          output.innerHTML += "Inside the then() method. <br>";
+          output.innerHTML += message;
+        })
+        .catch((message) => {
+          output.innerHTML += "Inside the catch() method.<br>";
+          output.innerHTML += message;
+        })
+        .finally(() => {
+          output.innerHTML += "<br>Inside the finally() method.";
+        });
+    </script>
+  </body>
+</html>

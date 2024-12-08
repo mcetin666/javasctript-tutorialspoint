@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      var num = 10;
+      let promise1 = new Promise((resolve, reject) => {
+        if (num == 20) {
+          resolve("The value of the number is 20 <br>");
+        } else {
+          setTimeout(() => {
+            reject("The value of the number is not 20 <br>");
+          }, 2000);
+        }
+      });
+      output.innerHTML += "Wait for consuming the promise <br>";
+      promise1.then(successFunc, errorfunc);
+      function successFunc(message) {
+        document.getElementById("output").innerHTML += message;
+      }
+      function errorfunc(message) {
+        document.getElementById("output").innerHTML += "Error: " + message;
+      }
+    </script>
+  </body>
+</html>

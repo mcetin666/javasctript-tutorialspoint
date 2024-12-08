@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      function multiply(a) {
+        let m = a * 4;
+        output.innerHTML = "The result is " + m + ".<br>";
+      }
+      function sum(a, b, callback) {
+        let c = a + b;
+        callback(c); // Invoking the callback funciton
+      }
+      sum(4, 8, multiply); // Passing multiply function as a callback
+    </script>
+  </body>
+</html>

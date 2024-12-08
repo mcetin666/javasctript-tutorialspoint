@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      const promise1 = new Promise((resolve, reject) => {
+        reject("There is an error.");
+      });
+
+      promise1
+        .then((value) => {
+          output.innerHTML += "The returned value is: " + value + "<br />";
+          return value + " Everything is fine!";
+        })
+        .then((value) => {
+          output.innerHTML += value;
+        })
+        .catch((error) => {
+          output.innerHTML += error;
+        });
+    </script>
+  </body>
+</html>

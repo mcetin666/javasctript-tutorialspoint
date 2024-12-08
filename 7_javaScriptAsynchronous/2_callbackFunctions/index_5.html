@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      let arr = [23, 21, 56, 11, 10, 7, 8];
+      let eventNums = arr.filter(filtercallback);
+
+      function filtercallback(element) {
+        return element % 2 == 0;
+      }
+      output.innerHTML += "The original array is: " + arr + "<br>";
+      output.innerHTML += "The even numbers are: " + eventNums;
+    </script>
+  </body>
+</html>

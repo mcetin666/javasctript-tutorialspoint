@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      document.getElementById("output").innerHTML +=
+        "You will see the message after 2000 milliseconds! <br>";
+      setTimeout(() => {
+        document.getElementById("output").innerHTML += "Hi! How are you?";
+      }, 2000);
+    </script>
+  </body>
+</html>

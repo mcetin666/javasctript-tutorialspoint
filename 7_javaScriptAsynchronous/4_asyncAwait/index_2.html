@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output">The resultant value from the promise is:</div>
+    <script>
+      async function solvePromise() {
+        const promise = new Promise((resolve, reject) => {
+          resolve("Promise is solved");
+        });
+        const result = await promise;
+        document.getElementById("output").innerHTML += result;
+      }
+      solvePromise();
+    </script>
+  </body>
+</html>

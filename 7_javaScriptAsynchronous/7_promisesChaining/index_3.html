@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      const promise1 = new Promise((resolve, reject) => {
+        resolve(2);
+      });
+
+      promise1.then((value) => {
+        output.innerHTML += "Inside the first promise handler. <br>";
+        return value * 2;
+      });
+
+      promise1.then((value) => {
+        output.innerHTML += "Inside the second promise handler. <br>";
+        return value * 2;
+      });
+
+      promise1.then((value) => {
+        output.innerHTML += "Inside the third promise handler. <br>";
+        return value * 2;
+      });
+    </script>
+  </body>
+</html>

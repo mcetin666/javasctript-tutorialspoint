@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <button onclick="startTimer()">Start Timer</button>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      var seconds = 0;
+      function startTimer() {
+        setInterval(() => {
+          seconds++;
+          output.innerHTML += "Total seconds are: " + seconds + "<br>";
+        }, 1000); // Calls timer() function after every second
+      }
+    </script>
+  </body>
+</html>

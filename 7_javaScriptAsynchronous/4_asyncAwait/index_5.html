@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      class animal {
+        async getAnimalName() {
+          return await "Lion";
+        }
+      }
+      const lionObj = new animal();
+      lionObj.getAnimalName().then((data) => {
+        document.getElementById("output").innerHTML =
+          "The animal name is: " + data;
+      });
+    </script>
+  </body>
+</html>

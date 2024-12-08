@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      output.innerHTML += "Start of the program. <br>";
+      setTimeout(printMessage, 500); // Asynchronous code
+      function printMessage() {
+        output.innerHTML += "In the printMessage() function. <br>";
+      }
+      output.innerHTML += "End of the program. <br>";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output">The sum of 5 and 10 is:</div>
+    <script>
+      function getSum(p, q, callback) {
+        let sum = p + q;
+        setTimeout(() => callback(null, sum), 1000);
+      }
+      getSum(5, 10, (err, sum) => {
+        // callback function
+        document.getElementById("output").innerHTML += sum;
+      });
+    </script>
+  </body>
+</html>

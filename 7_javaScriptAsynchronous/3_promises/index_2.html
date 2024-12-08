@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const num = 10;
+      const promise1 = new Promise((resolve, reject) => {
+        if (num == 10) {
+          resolve("The value of the number is 10 <br>");
+        } else {
+          reject("The value of the number is not 10 <br>");
+        }
+      });
+      promise1.then(successFunc, errorfunc);
+      function successFunc(message) {
+        document.getElementById("output").innerHTML += message;
+      }
+      function errorfunc(message) {
+        document.getElementById("output").innerHTML += message;
+      }
+    </script>
+  </body>
+</html>

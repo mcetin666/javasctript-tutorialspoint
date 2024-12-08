@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      let output = document.getElementById("demo");
+      async function solvePromise() {
+        const promise = new Promise((resolve, reject) => {
+          reject("The promise is rejected");
+        });
+        try {
+          const result = await promise;
+          output.innerHTML += "Inside the try block. <br>";
+          output.innerHTML += result;
+        } catch (err) {
+          output.innerHTML += "Inside the catch block. <br>";
+          output.innerHTML += err;
+        }
+      }
+      solvePromise();
+    </script>
+  </body>
+</html>

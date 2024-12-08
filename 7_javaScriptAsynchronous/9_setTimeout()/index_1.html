@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      document.getElementById("output").innerHTML = "Wait for a message! <br>";
+      setTimeout(timeout, 1000);
+      function timeout() {
+        document.getElementById("output").innerHTML +=
+          "This message is printed after 1 second!";
+      }
+    </script>
+  </body>
+</html>

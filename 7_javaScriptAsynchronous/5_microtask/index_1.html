@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      output.innerHTML += "The start of the code execution. <br>";
+
+      // Creating the promise
+      let promise = new Promise(function (resolve, reject) {
+        resolve("The promise is resolved. <br>");
+      });
+
+      // Consuming the promise code
+      promise.then(function (result) {
+        output.innerHTML += result;
+      });
+      output.innerHTML += "The end of the code execution. <br>";
+    </script>
+  </body>
+</html>

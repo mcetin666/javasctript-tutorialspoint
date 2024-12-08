@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <button onclick="startTimer()">Start Date Timer</button>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      var seconds = 0;
+      function startTimer() {
+        let message = "The date and time is: ";
+        setInterval(printDate, 1000, message);
+      }
+      function printDate(message) {
+        let date = new Date();
+        output.innerHTML += message + date + "<br>";
+      }
+    </script>
+  </body>
+</html>

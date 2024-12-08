@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      output.innerHTML += "Wait for updating the data...<br>";
+      //    Callback hell
+      function updateData(data, callback) {
+        setTimeout(() => {
+          callback(data);
+        }, 1000);
+      }
+      updateData(10, function (num1) {
+        let p = 1 + num1;
+        updateData(30, function (num2) {
+          let q = 1 + num2;
+          updateData("The numeric value is: " + (p + q), function (answer) {
+            output.innerText += answer;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

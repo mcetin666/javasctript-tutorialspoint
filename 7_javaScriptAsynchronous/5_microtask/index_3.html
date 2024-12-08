@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      output.innerHTML += "Start <br>";
+      setTimeout(function () {
+        // Macro task
+        output.innerHTML += "In setTimeOut() method. <br>";
+      }, 0);
+
+      let promise = new Promise(function (resolve, reject) {
+        resolve("In Promise constructor. <br>");
+      });
+      promise.then(function (value) {
+        // Micro tasks
+        output.innerHTML += value;
+      });
+      output.innerHTML += "End <br>";
+    </script>
+  </body>
+</html>

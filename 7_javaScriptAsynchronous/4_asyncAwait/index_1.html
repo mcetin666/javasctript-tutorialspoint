@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      async function getText() {
+        return "Text from the getText() function.";
+      }
+      getText()
+        .then((text) => {
+          document.getElementById("output").innerHTML = text + "<br>";
+        })
+        .catch((err) => {
+          document.getElementById("output").innerHTML += JSON.stringify(err);
+        });
+    </script>
+  </body>
+</html>

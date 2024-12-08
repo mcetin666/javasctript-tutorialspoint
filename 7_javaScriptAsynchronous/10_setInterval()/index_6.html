@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      #parent {
+        position: relative;
+        height: 50px;
+        width: 500px;
+        background-color: yellow;
+      }
+      #child {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child"></div>
+    </div>
+    <script>
+      let child = document.getElementById("child");
+      let left = 0;
+      // Moving animation using the setInterval() method
+      setInterval(() => {
+        if (left < 450) {
+          left += 5;
+          child.style.left = left + "px";
+        }
+      }, 10);
+    </script>
+  </body>
+</html>

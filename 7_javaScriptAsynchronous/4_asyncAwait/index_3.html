@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="output">The promise is being solved <br /></div>
+    <script>
+      async function solvePromise() {
+        const promise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            // Setting up timeout for promises
+            resolve("The promise is solved after 2 seconds");
+          }, 2000);
+        });
+        const result = await promise;
+        document.getElementById("output").innerHTML += result;
+      }
+      solvePromise();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output">The promise1 object is:</div>
+    <script>
+      var num = 10;
+      const promise1 = new Promise((resolve, reject) => {
+        if (num == 10) {
+          resolve("The value of the number is 10 <br>");
+        } else {
+          reject("The value of the number is not 10 <br>");
+        }
+      });
+      document.getElementById("output").innerHTML += promise1;
+    </script>
+  </body>
+</html>

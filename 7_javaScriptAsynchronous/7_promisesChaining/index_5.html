@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      const promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("Stage 1");
+        }, 2000);
+      });
+
+      promise1
+        .then((value) => {
+          output.innerHTML += value + "<br />";
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve("Stage 2");
+            }, 2000);
+          });
+        })
+        .then((value) => {
+          output.innerHTML += value + "<br />";
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve("Stage 3");
+            }, 2000);
+          });
+        })
+        .then((value) => {
+          output.innerHTML += value + "<br />";
+          output.innerHTML += "Finished";
+        });
+    </script>
+  </body>
+</html>

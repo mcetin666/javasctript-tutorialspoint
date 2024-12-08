@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      var num = 10;
+      const promise = new Promise((resolve, reject) => {
+        reject("Promise is rejected!");
+      });
+      promise
+        .then((message) => {
+          output.innerHTML += message;
+        })
+        .catch((message) => {
+          document.getElementById("output").innerHTML +=
+            "Inside the catch() method.<br>";
+          document.getElementById("output").innerHTML += message;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p>Message will print after 3 seconds.</p>
+    <p>Click the button to prevent timeout to execute.</p>
+    <p id="demo"></p>
+    <button onclick="stop()">Clear Timeout</button>
+    <script>
+      const myTimeout = setTimeout(greet, 3000);
+      function greet() {
+        document.getElementById("demo").innerHTML = "Hello World!";
+      }
+      function stop() {
+        clearTimeout(myTimeout);
+      }
+    </script>
+  </body>
+</html>

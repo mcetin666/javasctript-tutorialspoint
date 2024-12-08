@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      let arr = [23, 21, 56, 11, 10, 7, 8];
+      output.innerHTML += "The sorted array is - " + arr.sort();
+
+      // Sorting array in descending order
+      let sorted = arr.sort(function (a, b) {
+        return b - a;
+      });
+      output.innerHTML +=
+        "<br>The sorted array in descending order is - " + sorted;
+    </script>
+  </body>
+</html>

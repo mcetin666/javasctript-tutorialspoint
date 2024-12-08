@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      output.innerHTML += "The output of the counter is given below. <br>";
+      var p = 0;
+      function counter() {
+        output.innerHTML += "count is - " + p + ".<br>";
+        setTimeout(counter, 1000);
+        p++;
+      }
+      counter();
+    </script>
+  </body>
+</html>

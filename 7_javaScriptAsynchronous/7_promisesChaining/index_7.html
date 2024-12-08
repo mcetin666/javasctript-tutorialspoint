@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      output.innerHTML += "Wait for updating the data...<br>";
+      function updateData(data) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(data);
+          }, 1000);
+        });
+      }
+
+      updateData(10)
+        .then((num1) => {
+          let p = 1 + num1;
+          return updateData(p);
+        })
+        .then((num2) => {
+          let q = 31;
+          return updateData("The final value is: " + (num2 + q));
+        })
+        .then((res) => {
+          output.innerText += res;
+        });
+    </script>
+  </body>
+</html>
