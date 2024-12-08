@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <button onclick="setCookies()">Set Cookie</button>
+    <button onclick="deleteCookies()">Delete Cookie</button>
+    <button onclick="readCookies()">Read Cookies</button>
+    <p id="output"></p>
+    <script>
+      let output = document.getElementById("output");
+      function setCookies() {
+        document.cookie = "user1=sam;";
+        document.cookie = "user2=virat;";
+      }
+      function deleteCookies() {
+        document.cookie = "user1=sam;max-age=-60;";
+        document.cookie = "user2=virat;max-age=5000;";
+      }
+      function readCookies() {
+        const allCookies = document.cookie.split("; ");
+        output.innerHTML = "The cookie is : <br>";
+        for (const cookie of allCookies) {
+          const [key, value] = cookie.split("=");
+          if (key == "user1" || key == "user2") {
+            output.innerHTML += `${key} : ${decodeURIComponent(value)} <br>`;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <button onclick="setCookies()">Set Cookie</button> <br />
+    <br />
+    <button onclick="readCookies()">Read Cookies</button>
+    <script>
+      let output = document.getElementById("output");
+      function setCookies() {
+        document.cookie = "subscribed=false"; // name-value pair
+        output.innerHTML = "Cookie setting successful!";
+      }
+      function readCookies() {
+        const allCookies = document.cookie.split("; ");
+        output.innerHTML = "The subscribed cookie is - <br>";
+        for (const cookie of allCookies) {
+          const [name, value] = cookie.split("=");
+          if (name == "subscribed") {
+            output.innerHTML += `${name} : ${decodeURIComponent(value)} <br>`;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

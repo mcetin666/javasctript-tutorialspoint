@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      if (navigator.javaEnabled()) {
+        output.innerHTML += "Java is enabled in the browser!";
+      } else {
+        output.innerHTML += "Please, enable the Java!";
+      }
+    </script>
+    <p>Please note you may get different result depending on your browser.</p>
+  </body>
+</html>

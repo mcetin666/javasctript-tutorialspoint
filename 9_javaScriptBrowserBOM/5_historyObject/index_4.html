@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p>Click the below button to load 2nd next URL</p>
+    <button onclick="moveTo()">Move at 2nd next URL</button>
+    <p id="output"></p>
+    <script>
+      function moveTo() {
+        history.go(2);
+        document.getElementById("output").innerHTML =
+          "You will have forwarded to 2nd next URL if it exists.";
+      }
+    </script>
+  </body>
+</html>

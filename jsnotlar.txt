@@ -390,3 +390,61 @@ In JavaScript, the setTimeout() is a global method that allows you to execute th
 JavaScript setInterval() Method
 In JavaScript, the setInterval() is a window method that is used to execute a function repeatedly at a specific interval. The setTimeout() Method allows you to execute the function only once after the specified time.
 
+What are Cookies ?
+In JavaScript, cookies are piece of data stored in the user's web browser. The cookies are stored in the key-value pair inside the browser. We can manipulate the cookies using cookie property of document object. We can set or store a cookie in key-value pair using the cookie property. We can read cookies using document's cookie property and extract the desired information using destructuring.
+
+Cookie Attributes
+The JavaScript cookie attributes are used to set additional information about a cookie such as path, domain, expiry date, etc. In JavaScript, you can specify the cookie attributes while setting up a new cookie or updating the cookie. For example, you can set the cookie's expiry date using the 'expires' attributes.
+
+In order to delete cookies with JavaScript, we can set the expires date to a past date. We can also delete a cookie using the max-age attribute. We can delete the cookies explicitly from the browser.
+
+The Browser Object Model (BOM) in JavaScript refers to the objects provided by the browsers to interact with them. By using these objects, you can manipulate the browser's functionality. For example, you can get the browser history and window size, navigate to different URLs, etc.
+
+The JavaScript window object represents the browser's window. In JavaScript, a 'window' object is a global object. It contains the various methods and properties that we can use to access and manipulate the current browser window. For example, showing an alert, opening a new window, closing the current window, etc.
+
+Window Document Object
+The document object is a JavaScript object that provides the access to all elements of an HTML document. When the HTML document is loaded in the web browser, it creates a document object. It is the root of the HTML document.
+
+Window Screen Object
+The screen object in JavaScript is a property of the 'window' object. The 'screen' object's properties contain information about the device's screen. The screen object can be accessed by using the window.screen syntax. We can also access it without using the window object.
+
+Window History Object
+In JavaScript, the window 'history' object contains information about the browser's session history. It contains the array of visited URLs in the current session.
+
+Window Navigator Object
+The navigator object in JavaScript is used to access the information of the user's browser. Using the 'navigator' object, you can get the browser version and name and check whether the cookie is enabled in the browser.
+
+Window Location Object
+The location object in JavaScript provides information about the browser's location, i.e., URLs. It is a built-in property of both the window and document objects. We can access it using either window.location or document.location.
+
+Window Console Object
+In JavaScript, the 'console' object is a property of the window object. It allows the developers to access the debugging console of the browser.
+
+The console object contains the various methods used for different functionalities. In Node.js, the console object is used to interact with the terminal.
+
+We access the console object using the window object or without using the window object - window.console or just console.
+
+A Web API is an application programming interface (API) for web. The concept of the Web API is not limited to JavaScript only. It can be used with any programming language. Let’s learn what web API is first.
+
+Web History API
+In JavaScript, the history API allows us to access the browser’s history. It can be used to navigate through the history.
+
+JavaScript History API provides us with methods to manipulate window history object. History object is a property of JavaScript window object. The window history object contains the array of visited URLs in the current session
+
+The history API is very powerful tool to create may useful effects. For example, we can use it to implement history based undo redo system.
+
+What is Web Storage API?
+The web storage API in JavaScript allows us to store the data in the user's local system or hard disk. Before the storage API was introduced in JavaScript, cookies were used to store the data in the user's browser.
+
+Web Forms API
+JavaScript Forms API is a web API that allows us to interact with and manipulate HTML forms. It provides a set of methods and properties that are used to perform client-side form validation. It’s also helpful to ensure data integrity before form submission. The forms API also referred to as Form Validation API or Constraint Validation API.
+
+Web Worker API
+The worker API is a web API that allows us to run JavaScript code in the background thread. Whenever the web page loads in the browser, it becomes interactive after every <script> tag loads in the browser. Web workers allows users to interact with the web page without loading the whole JavaScript code in the browser. It increases the response time of the web page.
+
+What is a Fetch API?
+The JavaScript Fetch API is a web API that allows a web browser to make HTTP request to the web server. In JavaScript, the fetch API is introduced in the ES6 version. It is an alternative of the XMLHttpRequest (XHR) object, used to make a 'GET', 'POST', 'PUT', or 'DELETE' request to the server.
+
+Geolocation API
+The Geolocation API is a web API that provides a JavaScript interface to access the user's geographical location data. A Geolocation API contains the various methods and properties that you can use to access the user's location on your website.
+

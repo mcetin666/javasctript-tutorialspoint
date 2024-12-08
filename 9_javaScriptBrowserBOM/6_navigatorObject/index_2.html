@@ -1,0 +1,42 @@
+<html>
+  <body>
+    <p>Browser Information</p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML =
+        "App Name: " +
+        window.navigator.appName +
+        "<br>" +
+        "App Code Name: " +
+        window.navigator.appCodeName +
+        "<br>" +
+        "App Version: " +
+        window.navigator.appVersion +
+        "<br>" +
+        "Cookie Enabled: " +
+        window.navigator.cookieEnabled +
+        "<br>" +
+        "Language: " +
+        window.navigator.language +
+        "<br>" +
+        "Plugins: " +
+        window.navigator.plugins +
+        "<br>" +
+        "mimeTypes[]: " +
+        window.navigator.mimeTypes +
+        "<br>" +
+        "platform: " +
+        window.navigator.platform +
+        "<br>" +
+        "online: " +
+        window.navigator.online +
+        "<br>" +
+        "product: " +
+        window.navigator.product +
+        "<br>" +
+        "userAgent: " +
+        window.navigator.userAgent;
+    </script>
+    <p>Please note you may get different result depending on your browser.</p>
+  </body>
+</html>

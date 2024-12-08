@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="output1">The value of the global num variable is:</div>
+    <div id="output2">The value of the local num variable is:</div>
+    <div id="output3">The value of the car object is:</div>
+    <script>
+      var num = 100;
+      const car = {
+        brand: "Honda",
+        model: "city",
+      };
+
+      function test() {
+        let num = 300;
+        document.getElementById("output1").innerHTML += window.num;
+        document.getElementById("output2").innerHTML += num;
+        document.getElementById("output3").innerHTML += car.brand;
+      }
+      test();
+    </script>
+  </body>
+</html>

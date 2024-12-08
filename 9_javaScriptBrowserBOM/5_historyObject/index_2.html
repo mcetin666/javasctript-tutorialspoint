@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p>Click "Go Forward" button to load next URL</p>
+    <button onclick="goforward()">Go Forward</button>
+    <p id="output"></p>
+    <script>
+      function goforward() {
+        history.forward();
+        document.getElementById("output").innerHTML =
+          "You will have forwarded to next URL if it exists.";
+      }
+    </script>
+  </body>
+</html>
