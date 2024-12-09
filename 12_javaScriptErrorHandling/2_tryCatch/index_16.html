@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      try {
+        decodeURI("%");
+      } catch (err) {
+        document.getElementById("output").innerHTML = err;
+      }
+    </script>
+  </body>
+</html>

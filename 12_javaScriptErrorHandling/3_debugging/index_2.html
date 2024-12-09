@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <p>
+      Note: To see the resullt in console, please open it before you run the
+      code.
+    </p>
+    <script>
+      let output = document.getElementById("demo");
+      let person = {
+        name: "John",
+        age: 25,
+        city: "New York",
+      };
+      output.innerHTML = "The name of the person is: " + person.name + "<br>";
+      output.innerHTML += "The city of the person is: " + person.city + "<br>";
+      console.log(person);
+    </script>
+  </body>
+</html>

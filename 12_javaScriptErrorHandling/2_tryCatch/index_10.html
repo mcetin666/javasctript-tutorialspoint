@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      try {
+        welcome(); // Function not defined
+      } catch (e) {
+        if (e instanceof ReferenceError) {
+          output.innerHTML = "Reference error is occurred.";
+        } else if (e instanceof TypeError) {
+          output.innerHTML = "Type error is occurred.";
+        } else if (e instanceof RangeError) {
+          output.innerHTML = "Range error is occurred.";
+        } else if (e instanceof SyntaxError) {
+          output.innerHTML = "Syntax error is occurred.";
+        } else {
+          output.innerHTML = "Error is occurred.";
+        }
+      }
+    </script>
+  </body>
+</html>

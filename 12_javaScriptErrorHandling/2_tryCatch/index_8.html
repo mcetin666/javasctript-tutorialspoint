@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      try {
+        try {
+          throw Error("Error in the inner try block");
+        } finally {
+          output.innerHTML += "Inside the inner finally block. <br>";
+        }
+      } catch (e) {
+        output.innerHTML += "Inside the outer catch block. <br>";
+        output.innerHTML += "Error: " + e.message;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      try {
+        output.innerHTML += "In the start of try block <br>";
+        welcome();
+        output.innerHTML += "In the end of try block <br>";
+      } catch (err) {
+        output.innerHTML += "In the catch block <br>";
+        output.innerHTML += "The error name is: " + err.name + "<br>";
+        output.innerHTML += "The error message is: " + err.message + ".<br>";
+      }
+    </script>
+  </body>
+</html>

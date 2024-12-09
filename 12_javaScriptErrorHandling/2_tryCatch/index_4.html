@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      try {
+        let a = 10;
+        output.innerHTML = "Value of a is " + a + "<br>";
+      } catch (e) {
+        output.innerHTML = e.name + " : " + e.message;
+      } finally {
+        output.innerHTML += "Inside the finally block.";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <div id="output">The error message is:</div>
+    <script>
+      try {
+        throw 20;
+      } catch (e) {
+        document.getElementById("output").innerHTML += e;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      try {
+        output.innerHTML += "Start of the try block. <br />";
+        throw new Error("Custom error");
+        output.innerHTML += "End of the try block. <br />"; //not executed
+      } catch (e) {
+        output.innerHTML += "Catch block: Caught exception. <br />";
+        output.innerHTML += e.name + " : " + e.message;
+      }
+    </script>
+  </body>
+</html>

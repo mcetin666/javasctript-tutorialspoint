@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      try {
+        output.innerHTML = "Inside the try block. <br>";
+        setTimeout(() => {
+          throw new Error("Whoops!");
+        }, 1000);
+      } catch (err) {
+        output.innerHTML += "Inside the catch block. <br>";
+        output.innerHTML = err;
+      }
+    </script>
+  </body>
+</html>

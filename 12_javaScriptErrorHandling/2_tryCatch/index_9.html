@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      let output = document.getElementById("demo");
+      try {
+        try {
+          throw 20;
+        } catch (e) {
+          // Rethrowing the error.
+          output.innerHTML = "Inside the inner catch block. <br>";
+          output.innerHTML += "Error: " + e + "<br> <br>";
+          throw e;
+        }
+      } catch (e) {
+        output.innerHTML += "Inside the outer catch block. <br>";
+        output.innerHTML += "Error: " + e;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      try {
+        let num = 10;
+        num.toPrecision(1000);
+      } catch (err) {
+        document.getElementById("output").innerHTML = err;
+      }
+    </script>
+  </body>
+</html>

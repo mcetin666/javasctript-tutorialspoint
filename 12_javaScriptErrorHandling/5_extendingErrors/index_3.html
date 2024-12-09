@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      class NotFound extends Error {
+        constructor(message) {
+          super(message);
+          this.name = "NotFound";
+        }
+      }
+
+      // Further Inheritance
+      class propertyNotFound extends NotFound {
+        constructor(message) {
+          super(message);
+          this.name = "propertyNotFound";
+        }
+      }
+
+      // Further Inheritance
+      class ElementNotFound extends NotFound {
+        constructor(message) {
+          super(message);
+          this.name = "ElementNotFound";
+        }
+      }
+
+      try {
+        let arr = [1, 2, 3, 4, 5];
+
+        // Throw an error if array doesn't contain 6
+        if (!arr.includes(6)) {
+          throw new propertyNotFound("Array doesn't contain 6");
+        }
+      } catch (e) {
+        output.innerHTML = e.name + ": " + e.message;
+      }
+    </script>
+  </body>
+</html>

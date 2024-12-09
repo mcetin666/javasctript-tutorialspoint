@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      try {
+        let a = b;
+      } catch (e) {
+        document.getElementById("output").innerHTML = e;
+      } finally {
+        document.getElementById("output").innerHTML +=
+          "<br>Finally block always executes";
+      }
+    </script>
+  </body>
+</html>

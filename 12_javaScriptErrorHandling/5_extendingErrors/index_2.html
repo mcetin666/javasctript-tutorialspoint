@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      class StringError extends Error {}
+      class NumberError extends Error {}
+      class BooleanError extends Error {}
+      try {
+        throw new StringError("This is a string error");
+      } catch (e) {
+        if (e instanceof StringError) {
+          output.innerHTML = "String Error";
+        } else if (e instanceof NumberError) {
+          output.innerHTML = "Number Error";
+        } else if (e instanceof BooleanError) {
+          output.innerHTML = "Boolean Error";
+        } else {
+          output.innerHTML = "Unknown Error";
+        }
+      }
+    </script>
+  </body>
+</html>

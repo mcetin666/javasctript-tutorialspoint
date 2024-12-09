@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      try {
+        let bool = true;
+        bool.toLowerCase();
+      } catch (err) {
+        document.getElementById("output").innerHTML = err;
+      }
+    </script>
+  </body>
+</html>

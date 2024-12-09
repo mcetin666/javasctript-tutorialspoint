@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      output.innerHTML = "The promise is pending...";
+      let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          reject("The promise is rejected!");
+        }, 1000);
+      });
+      promise
+        .then((result) => {
+          output.innerHTML = result;
+        })
+        .catch((error) => {
+          output.innerHTML = error;
+        });
+    </script>
+  </body>
+</html>

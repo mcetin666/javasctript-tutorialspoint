@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <p>Enter your age: <input type="number" id="age" /></p>
+    <button onclick="checkAge()">Check Age</button>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      class ageError extends Error {
+        constructor(message, age) {
+          super(message);
+          this.name = "ageError";
+          this.age = age; // Custom property
+        }
+      }
+      function checkAge() {
+        const ageValue = document.getElementById("age").value;
+        try {
+          if (ageValue < 18) {
+            // Throw error when age is less than 18
+            throw new ageError("You are too young", ageValue);
+          } else {
+            output.innerHTML = "You are old enough";
+          }
+        } catch (e) {
+          output.innerHTML = "Error: " + e.message + ". <br>";
+          output.innerHTML += "Age: " + e.age + "<br>";
+        }
+      }
+    </script>
+  </body>
+</html>

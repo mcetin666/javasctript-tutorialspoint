@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p>Age: <input type="number" id="age" value="20" /></p>
+    <button onclick="handleAge()">Submit Age</button>
+    <p id="demo"></p>
+    <script>
+      const output = document.getElementById("demo");
+      function handleAge() {
+        let age = document.getElementById("age").value;
+        try {
+          if (age < 18) {
+            throw RangeError("You are not eligible to vote");
+          } else {
+            output.innerHTML += "<br>You are eligible to vote";
+          }
+        } catch (e) {
+          output.innerHTML += "<br>The error is - " + e;
+        }
+      }
+    </script>
+  </body>
+</html>

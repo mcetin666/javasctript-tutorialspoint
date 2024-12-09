@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const customError = new Error("This is a custom error");
+      customError.name = "CustomError";
+      try {
+        throw customError;
+      } catch (err) {
+        document.getElementById("output").innerHTML = err;
+      }
+    </script>
+  </body>
+</html>

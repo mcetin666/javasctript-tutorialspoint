@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      function validationError(message = "", name = "validationError") {
+        this.message = message;
+        this.name = name;
+      }
+      validationError.prototype = Error.prototype;
+
+      try {
+        let str = 10;
+        if (typeof str != "string") {
+          throw new validationError("Not a string", "NotStringError");
+        } else {
+          output.innerHTML = "String is valid";
+        }
+      } catch (e) {
+        output.innerHTML = e.name + ": " + e.message;
+      }
+    </script>
+  </body>
+</html>
