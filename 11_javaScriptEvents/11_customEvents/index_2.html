@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="triggerBtn">Trigger Custom Event</button>
+    <script>
+      const eventData = { message: "Hello from custom event!" };
+      const customEvent = new CustomEvent("myCustomEventWithData", {
+        detail: eventData,
+      });
+      document
+        .getElementById("triggerBtn")
+        .addEventListener("click", function () {
+          document.dispatchEvent(customEvent);
+        });
+      document.addEventListener("myCustomEventWithData", function (event) {
+        alert("Custom event triggered with data: " + event.detail.message);
+      });
+    </script>
+  </body>
+</html>

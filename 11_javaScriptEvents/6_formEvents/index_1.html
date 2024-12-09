@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="country">Select a country:</label>
+    <select id="country" onchange="handleChange()">
+      <option value="USA">USA</option>
+      <option value="Canada">Canada</option>
+      <option value="UK">UK</option>
+      <option value="India">India</option>
+    </select>
+    <p id="txt"></p>
+    <script>
+      function handleChange() {
+        // Perform actions when the dropdown selection changes
+        var selectedCountry = document.getElementById("country").value;
+        document.getElementById("txt").textContent =
+          "Selected country: " + selectedCountry;
+      }
+    </script>
+  </body>
+</html>

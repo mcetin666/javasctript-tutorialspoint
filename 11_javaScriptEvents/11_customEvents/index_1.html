@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="triggerBtn">Trigger Event</button>
+    <script>
+      // Creates the new custom event.
+      const customEvent = new Event("myCustomEvent");
+      // Adds an event listener to the button.
+      document
+        .getElementById("triggerBtn")
+        .addEventListener("click", function () {
+          // Dispatches custom event on button click.
+          document.dispatchEvent(customEvent);
+        });
+      // Add listener for the custom event.
+      document.addEventListener("myCustomEvent", function () {
+        alert("Custom event triggered!");
+      });
+    </script>
+  </body>
+</html>

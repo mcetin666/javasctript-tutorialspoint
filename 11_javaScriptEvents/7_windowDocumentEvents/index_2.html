@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Events Example</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        alert("DOM content has been fully loaded!");
+      });
+
+      document.addEventListener(
+        "click",
+        function (event) {
+          alert("Element clicked! Tag Name: " + event.target.tagName);
+        },
+        { once: true }
+      );
+
+      document.addEventListener("submit", function () {
+        alert("Form submitted!");
+      });
+
+      document.addEventListener(
+        "keydown",
+        function (event) {
+          alert("Key pressed: " + event.key);
+        },
+        { once: true }
+      );
+    </script>
+  </head>
+  <body>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

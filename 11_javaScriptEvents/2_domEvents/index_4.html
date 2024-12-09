@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <div
+      id="text"
+      style="font-size: 20px"
+      onmouseenter="changeRed()"
+      onmouseleave="changeBlack()"
+    >
+      Hover over the text.
+    </div>
+    <script>
+      function changeRed() {
+        document.getElementById("text").style.color = "red";
+      }
+      function changeBlack() {
+        document.getElementById("text").style.color = "black";
+      }
+    </script>
+  </body>
+</html>

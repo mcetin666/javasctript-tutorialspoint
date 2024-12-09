@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .level1 {
+        background-color: #ff9999;
+        padding: 20px;
+        text-align: center;
+        max-width: 80%;
+        cursor: pointer;
+      }
+
+      .level2 {
+        background-color: #99ff99;
+        padding: 15px;
+      }
+
+      .level3 {
+        background-color: #9999ff;
+        padding: 10px;
+        cursor: pointer;
+      }
+      #message {
+        margin-top: 10px;
+        font-weight: lighter;
+        border: 1px solid #ddd;
+        padding: 10px;
+        max-width: 80%;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        font-family: "Arial", sans-serif;
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="level1" id="div1">
+      Level 1
+      <div class="level2" id="div2">
+        Level 2
+        <div class="level3" id="div3">Level 3 (Click me!)</div>
+      </div>
+    </div>
+    <div id="message"></div>
+    <script>
+      const messageElement = document.getElementById("message");
+      document
+        .getElementById("div1")
+        .addEventListener("click", function (event) {
+          messageElement.innerHTML +=
+            "Clicked on Level 1, Background Color:" +
+            getComputedStyle(event.target).backgroundColor +
+            "<br>";
+        });
+
+      document
+        .getElementById("div2")
+        .addEventListener("click", function (event) {
+          messageElement.innerHTML +=
+            "Clicked on Level 2, Background Color:" +
+            getComputedStyle(event.target).backgroundColor +
+            "<br>";
+        });
+
+      document
+        .getElementById("div3")
+        .addEventListener("click", function (event) {
+          messageElement.innerHTML +=
+            "Clicked on Level 3, Background Color:" +
+            getComputedStyle(event.target).backgroundColor +
+            "<br>";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      var v = "tutorialspoint";
+      var a = "AAAAAAAAAAAAAA";
+      const event = new Event("TutorialEvent");
+      const event2 = new Event("TutorialEvent2");
+
+      document.addEventListener("TutorialEvent", () => {
+        alert("Welcome to Tutorialspoint Event");
+      });
+      document.addEventListener("TutorialEvent2", () => {
+        alert("Welcome to Event 2");
+      });
+
+      if (v == "tutorialspoint") {
+        document.dispatchEvent(event);
+      } else {
+        document.dispatchEvent(event2);
+      }
+    </script>
+  </body>
+</html>

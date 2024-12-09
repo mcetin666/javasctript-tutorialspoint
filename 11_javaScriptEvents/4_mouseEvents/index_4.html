@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse Move Event Example</title>
+  </head>
+  <body>
+    <div
+      id="mouseMoveDiv"
+      style="width: 600px; height: 200px; background-color: lightgreen"
+    >
+      Please move you mouse inside this DIV.
+    </div>
+    <p id="output"></p>
+    <script>
+      const mouseMoveDiv = document.getElementById("mouseMoveDiv");
+      const outputDiv = document.getElementById("output");
+      mouseMoveDiv.addEventListener("mousemove", function (event) {
+        const x = event.clientX;
+        const y = event.clientY;
+        outputDiv.innerHTML +=
+          `Mouse moved to (${x}, ${y})` + JSON.stringify(event) + "<br>";
+      });
+    </script>
+  </body>
+</html>

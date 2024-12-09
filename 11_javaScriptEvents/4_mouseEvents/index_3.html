@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse Down and Mouse Up Events Example</title>
+  </head>
+  <body>
+    <div
+      id="mouseUpDownDiv"
+      style="width: 600px; height: 100px; background-color: lightblue"
+    >
+      Please perform mouse down and up event any where in this DIV.
+    </div>
+    <p id="output"></p>
+    <script>
+      const mouseUpDownDiv = document.getElementById("mouseUpDownDiv");
+      const outputDiv = document.getElementById("output");
+      mouseUpDownDiv.addEventListener("mousedown", function (event) {
+        outputDiv.innerHTML +=
+          "Mouse button down!" + JSON.stringify(event) + "<br>";
+      });
+
+      mouseUpDownDiv.addEventListener("mouseup", function (event) {
+        outputDiv.innerHTML +=
+          "Mouse button up!" + JSON.stringify(event) + "<br>";
+      });
+    </script>
+  </body>
+</html>

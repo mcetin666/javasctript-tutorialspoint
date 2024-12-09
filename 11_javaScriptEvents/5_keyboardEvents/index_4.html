@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      Enter some text:
+      <input onkeydown="handleKeyDown(event)" onkeyup="handleKeyUp(event)" />
+    </div>
+    <div id="output"></div>
+    <script>
+      function handleKeyDown(event) {
+        document.getElementById("output").innerHTML +=
+          "Key pressed: " +
+          event.key +
+          "<br>Key code: " +
+          event.keyCode +
+          "<br>";
+      }
+      function handleKeyUp(event) {
+        document.getElementById("output").innerHTML +=
+          "Key released:" + event.key + "<br><br>";
+      }
+    </script>
+  </body>
+</html>

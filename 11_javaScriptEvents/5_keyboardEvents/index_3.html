@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>Press and Release a key</h3>
+    <div id="output"></div>
+    <script>
+      document.addEventListener("keyup", function (event) {
+        document.getElementById("output").innerHTML =
+          "Key released: " + event.key;
+      });
+    </script>
+  </body>
+</html>
