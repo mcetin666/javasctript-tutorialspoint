@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="fruits">
+      <p>Banana</p>
+      <p>Watermelon</p>
+      <p>Apple</p>
+    </div>
+    <button onclick="removeFruit()">Remove Apple</button>
+    <script>
+      function removeFruit() {
+        const fruits = document.getElementById("fruits");
+        const apple = fruits.children[2];
+        fruits.removeChild(apple);
+      }
+    </script>
+  </body>
+</html>

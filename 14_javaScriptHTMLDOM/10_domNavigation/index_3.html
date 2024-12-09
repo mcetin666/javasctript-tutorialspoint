@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="lang">
+      <p>Java</p>
+      <p>JavaScript</p>
+      <p>HTML</p>
+      Programming Languages
+    </div>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      const langs = document.getElementById("lang");
+      // Using the lastChild property
+      output.innerHTML +=
+        "langs.lastChild: " + langs.lastChild.textContent.trim() + "<br>";
+      // Using the lastElementChild property
+      output.innerHTML +=
+        "langs.lastElementChild: " +
+        langs.lastElementChild.textContent +
+        "<br>";
+    </script>
+  </body>
+</html>

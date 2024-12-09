@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="num">
+      Numbers
+      <p>One</p>
+    </div>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      const num = document.getElementById("num");
+      let child = num.childNodes;
+      output.innerHTML +=
+        "The value of the first child is: " + child[0].nodeValue + "<br>";
+      output.innerHTML +=
+        "The value of the second child is: " + child[1].nodeValue + "<br>";
+    </script>
+  </body>
+</html>

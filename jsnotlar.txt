@@ -498,4 +498,52 @@ The new keyword in JavaScript is used to create an instance of the object that h
 
 The var keyword in JavaScript is used to declare variables. Before ES6, there was only var keyword to declare a variable. In ES6, let and const keywords were introduced as a better way to declare variables. It is advised to use let instead of var to declare a variable. If you are targeting older version of browser, you can use var.
 
+The HTML DOM allows JavaScript to access and modify the content of HTML elements. JavaScript can change all HTML elements, attributes, CSS styles in the page. JavaScript can also add, remove the HTML elements and attributes. Using JavaScript, we can even create new events in the page.
+
+In JavaScript, DOM methods are used to perform a particular action on HTML elements. The DOM represents a HTML document or web page with a logical tree. In the tree, each branch ends in a node, and each node contains objects. DOM methods allow us programmatic access to the tree. Using the DOM methods, you can change the document's structure, style, or content.
+
+JavaScript DOM Document
+The JavaScript DOM document object owns all objects in the webpage. It represents the webpage. When the webpage is loaded in the web browser, it creates an HTML DOM 'document' object. It is the root of the HTML document.
+
+The DOM Elements
+The HTML DOM elements is the acronym for the Document Object Model elements. With JavaScript, we can manipulate the HTM elements. We can access the HTML elements using id, attribute, tag name, class name, etc.
+
+The attribute interface in the Document Object Model (DOM) represents attributes of an element as an object. And, this object represents an HTML attribute, through which we can control the functionality of HTML elements.
+
+The DOM Forms
+The HTML DOM document forms are used to get the data from the users.
+
+Changing HTML with JavaScript
+The HTML DOM allows us to change the HTML elements with JavaScript. You can customize or dynamically update the HTML elements using the various methods and properties. For example, you can change the content of the HTML element, remove or add new HTML elements to the web page, change a particular element's attribute's value, etc.
+
+Changing CSS with JavaScript
+JavaScript allows you to change the CSS of the HTML element dynamically.
+
+When HTML gets loaded in the browser, it creates a DOM tree. The DOM tree contains each HTML element in the object format. Furthermore, each HTML element object contains the 'style' object as a property. Here, a 'style' object contains various properties like color, backgroundcolor, etc., to change or get the element's style.
+
+So, you can use various properties of the 'style' object to change the style of the particular HTML element.
+
+The DOM animation can be achieved by changing the DOM element's style using JavaScript. When changes are gradual and time interval is small, the animation looks continuous.
+
+In JavaScript, with HTML DOM we can navigate the tree nodes using the relationship between the nodes. Each HTML element is represented as a node in the DOM tree. The HTML document object is represented as root node. There are different types of nodes such as root node, parent, child and sibling nodes. The relationship between these nodes help to navigate the DOM tree.
+
+DOM Collections
+The DOM (Document Object Model) collections are a way to group together related HTML elements. They are read-only and can be accessed using the properties of DOM objects such as the document object or a DOM node.
+
+DOM NodeList
+The NodeLists are similar to an array or HTMLCollection containing the HTML elements. However, it is not the same as the array or HTML collection.
+
+DOMTokenList
+The DOMTokenList is an interface in DOM (Document Object Model) which represents a set of space-separated tokens (classes). Generally, it is used for managing the classes in HTML elements.
+
+The stages of Bubble Sort are covered in this chapter, which includes a JavaScript implementation. The word 'sort' refers to the process of rearranging the elements in ascending order.
+
+When an object creates a direct or indirect reference to itself, it is known as circular referencing. It makes the loop closed. JavaScript has the same circular referencing issue as other programming languages. A few errors of JavaScript circular referencing modes will be discussed in this chapter.
+
+You can increase your application's reliability and maintainability by testing your code to find errors earlier using Jest. Jest is a popular choice for JavaScript testing, particularly for applications made using Node.js, React, Angular, and Vue.js. Let us look at Jest's features and how to use them.
+
+Cross-Origin Resource Sharing (CORS) is a browser-level security feature that, by default, blocks queries across different origins, like a front-end client querying a back-end server hosted on a separate origin or domain.
+
+Data analysis is essential for modern research and business. It offers information to support innovation, strategy development, and decision-making. Computer languages like Python and R which are known for their vast libraries and statistical capabilities, have historically been linked to data analysis.
+
 

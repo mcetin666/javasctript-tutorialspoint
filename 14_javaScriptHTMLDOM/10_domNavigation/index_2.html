@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="num">
+      Numbers
+      <p>One</p>
+      <p>Two</p>
+      <p>Three</p>
+    </div>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      const numbers = document.getElementById("num");
+      // Using the firstChild property
+      output.innerHTML +=
+        "numbers.firstChild: " + numbers.firstChild.textContent.trim() + "<br>";
+      // Using the firstElementChild property
+      output.innerHTML +=
+        "numbers.firstElementChild: " +
+        numbers.firstElementChild.textContent +
+        "<br>";
+    </script>
+  </body>
+</html>

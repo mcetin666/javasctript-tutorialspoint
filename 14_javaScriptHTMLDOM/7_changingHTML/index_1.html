@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="text">
+      <p>One</p>
+      <p>Two</p>
+    </div>
+    <button onclick="changeHTML()">Change HTML</button>
+    <script>
+      function changeHTML() {
+        let text = document.getElementById("text");
+        text.innerHTML = `<div> JavaScript </div> <div> HTML </div> <div> CSS </div>`;
+      }
+    </script>
+  </body>
+</html>

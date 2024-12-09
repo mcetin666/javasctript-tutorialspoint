@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript DOM NodeList</title>
+  </head>
+  <body>
+    <div>
+      <p>This is first paragraph.</p>
+      <p>This is second paragraph.</p>
+      <p>This is third paragraph.</p>
+      <p>This is fourth paragraph.</p>
+    </div>
+    <script>
+      let myNodeList = document.querySelectorAll("p");
+      //you can access the node list by index
+      //access the third node list
+      alert("This is third P: " + myNodeList[2].innerHTML);
+    </script>
+  </body>
+</html>

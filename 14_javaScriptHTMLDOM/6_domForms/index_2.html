@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <form id="form1">
+      <label for="first"> Fruit Name: </label>
+      <input type="text" name="first" id="first" />
+    </form>
+    <form id="form2">
+      <label for="second"> Price: </label>
+      <input type="text" name="second" id="second" />
+    </form>
+    <form id="form3">
+      <label for="third"> Color: </label>
+      <input type="text" name="third" id="third" />
+    </form>
+    <div id="output"></div>
+    <script>
+      document.getElementById("output").innerHTML =
+        "Id of the first form is: " +
+        document.forms[0].id +
+        "<br>" +
+        "Id of the second form is: " +
+        document.forms[1].id +
+        "<br>" +
+        "Id of the third form is: " +
+        document.forms[2].id;
+    </script>
+  </body>
+</html>

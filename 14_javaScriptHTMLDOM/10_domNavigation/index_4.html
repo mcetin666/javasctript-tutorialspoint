@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="lang">
+      <p>Java</p>
+      <p>JavaScript</p>
+      <p>HTML</p>
+      programming Languages
+    </div>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+      let langs = document.getElementById("lang");
+      output.innerHTML += "All children of the div element are - " + "<br>";
+      let allChild = langs.childNodes;
+      for (let i = 0; i < allChild.length; i++) {
+        output.innerHTML +=
+          allChild[i].nodeName + " " + allChild[i].innerHTML + "<br>";
+      }
+    </script>
+  </body>
+</html>

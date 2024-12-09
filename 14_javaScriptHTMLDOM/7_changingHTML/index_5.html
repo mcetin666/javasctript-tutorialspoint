@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="fruits">
+      <p>Banana</p>
+      <p>Watermelon</p>
+    </div>
+    <button onclick="AddFruit()">Add Apple</button>
+    <script>
+      function AddFruit() {
+        const fruits = document.getElementById("fruits");
+        const p = document.createElement("p");
+        p.innerHTML = "Apple";
+        fruits.appendChild(p); // Using the appendChild() method
+      }
+    </script>
+  </body>
+</html>

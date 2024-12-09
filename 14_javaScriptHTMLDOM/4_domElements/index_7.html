@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="text" style="background-color: red; color: white">
+      <p>Some text</p>
+      <p>Some other text</p>
+    </div>
+    <div id="output"></div>
+    <script>
+      let text = document.getElementById("text");
+      text.addEventListener("click", function () {
+        document.getElementById("output").innerHTML =
+          "You clicked on the div element";
+      });
+    </script>
+  </body>
+</html>

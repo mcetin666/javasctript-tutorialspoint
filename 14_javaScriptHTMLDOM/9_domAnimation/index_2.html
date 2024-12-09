@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #parent {
+        width: 700px;
+        height: 200px;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent"></div>
+    <br />
+    <button onclick="startAnimation()">Animate Div</button>
+    <script>
+      function startAnimation() {
+        const parent = document.getElementById("parent");
+        let opacity = 1;
+        let id = setInterval(animationFrame, 50);
+        function animationFrame() {
+          if (opacity <= 0) {
+            // Stop animation
+            clearInterval(id);
+            parent.style.opacity = 1;
+            parent.style.backgroundColor = "red";
+          } else {
+            // Decrease the opacity
+            parent.style.opacity = opacity;
+            opacity = opacity - 0.1;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

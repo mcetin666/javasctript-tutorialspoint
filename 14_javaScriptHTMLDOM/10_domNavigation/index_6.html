@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul id="fruit">
+      <li id="apple">Apple</li>
+      <li id="banana">Banana</li>
+      <li id="watermealon">Watermealon</li>
+    </ul>
+    <div id="output">The next sibling node of the apple node is:</div>
+    <script>
+      const apple = document.getElementById("apple");
+      document.getElementById("output").innerHTML +=
+        apple.nextElementSibling.textContent;
+    </script>
+  </body>
+</html>

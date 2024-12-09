@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <form onsubmit="submitForm(event)" id="form">
+      <p>Number: <input type="number" name="num" required /></p>
+      <p><input type="submit" /></p>
+    </form>
+    <div id="output"></div>
+    <script>
+      function submitForm(e) {
+        e.preventDefault();
+        const num = document.forms["form"]["num"].value;
+        document.getElementById("output").innerHTML +=
+          "The submitted numeric value is: " + num + "<br>";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="text">Hello World!</div>
+    <button onclick="changeHTML()">Change HTML</button>
+    <script>
+      function changeHTML() {
+        const text = document.getElementById("text");
+        const textNode = document.createElement("p");
+        textNode.innerHTML = "Welcome to the Tutorialspoint!";
+        // Using the replaceWith() method
+        text.replaceWith(textNode);
+      }
+    </script>
+  </body>
+</html>

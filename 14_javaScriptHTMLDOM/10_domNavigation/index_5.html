@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul id="color">
+      <li id="blue">Blue</li>
+      <li>Pink</li>
+      <li>Red</li>
+    </ul>
+    <div id="output">The child node of the color list is:</div>
+    <script>
+      const blue = document.getElementById("blue");
+      document.getElementById("output").innerHTML += blue.parentNode.nodeName;
+    </script>
+  </body>
+</html>

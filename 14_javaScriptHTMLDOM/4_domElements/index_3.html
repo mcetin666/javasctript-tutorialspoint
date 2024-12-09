@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <div class="fruit">Apple</div>
+    <div id="output">The name of the fruit is:</div>
+    <script>
+      const divEle = document.getElementsByClassName("fruit");
+      document.getElementById("output").innerHTML += divEle[0].innerHTML;
+    </script>
+  </body>
+</html>

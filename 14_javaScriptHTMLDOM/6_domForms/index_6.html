@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <form onsubmit="submitForm(event)" id="emailform">
+      <p>Email: <input type="email" name="email" /></p>
+      <p><input type="submit" /></p>
+    </form>
+    <div id="output"></div>
+    <script>
+      function submitForm(e) {
+        e.preventDefault();
+
+        const email = document.forms["emailform"]["email"].value;
+        //Validate email using regex
+        const emailRegex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+        if (emailRegex.test(email)) {
+          document.getElementById("output").innerHTML = "Email is valid!";
+        } else {
+          document.getElementById("output").innerHTML = "Email is not valid!";
+        }
+      }
+    </script>
+  </body>
+</html>

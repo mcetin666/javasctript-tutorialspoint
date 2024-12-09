@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="text">
+      <p>Paragraph One</p>
+      <p>Paragraph Two</p>
+    </div>
+    <p></p>
+    <button onclick="changeHTML()">Change HTML</button>
+    <script>
+      function changeHTML() {
+        let text = document.getElementById("text");
+        text.outerHTML = `<img src="https://www.tutorialspoint.com/static/images/logo.png?v3" alt="Logo">`;
+      }
+    </script>
+  </body>
+</html>

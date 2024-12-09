@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <p>DOMTokenList Example</p>
+    <div id="myList" class="tp1 tp2 tp3">I'm inside div.</div>
+    <span id="result"></span>
+    <script>
+      let list = document.getElementById("myList").classList;
+      document.getElementById("result").innerHTML =
+        "DOMTokenList length (number of classes) is : " + list.length;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul id="fruit">
+      <li id="apple">Apple</li>
+      <li id="banana">Banana</li>
+      <li id="watermealon">Watermealon</li>
+    </ul>
+    <div id="output">The previous sibling node of the banana node is:</div>
+    <script>
+      const banana = document.getElementById("banana");
+      document.getElementById("output").innerHTML +=
+        banana.previousElementSibling.textContent;
+    </script>
+  </body>
+</html>

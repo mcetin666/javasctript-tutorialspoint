@@ -1,0 +1,20 @@
+<DOCTYPE html>
+  <html>
+    <body>
+      <p class="lang">English</p>
+      <p class="lang">German</p>
+      <p class="lang">Arabic</p>
+      <p class="lang">Hindi</p>
+      <br />
+      <div id="output"></div>
+      <script>
+        const output = document.getElementById("output");
+        output.innerHTML += "All languages are: <br>";
+        const langs = document.querySelectorAll(".lang");
+        langs.forEach((language) => {
+          output.innerHTML += language.innerHTML + "<br>";
+        });
+      </script>
+    </body>
+  </html></DOCTYPE
+>

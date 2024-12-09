@@ -1,0 +1,16 @@
+<DOCTYPE html>
+  <html>
+    <body>
+      <div class="text" id="JavaScript">JavaScript</div>
+      <div class="text" id="PHP">PHP</div>
+      <div class="text" id="Python">Python</div>
+      <div class="text" id="Java">Java</div>
+      <div id="output">The Element having id equal to JavaScript is:</div>
+      <script>
+        const output = document.getElementById("output");
+        const langs = document.getElementsByClassName("text");
+        output.innerHTML += langs.namedItem("JavaScript").innerHTML;
+      </script>
+    </body>
+  </html></DOCTYPE
+>

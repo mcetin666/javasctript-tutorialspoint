@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <button onclick="replaceText()">Replace Child</button>
+    <div id="text">
+      <p>Hi Users!</p>
+    </div>
+    <script>
+      function replaceText() {
+        let textDiv = document.getElementById("text");
+        let newText = document.createTextNode("Hello World");
+        textDiv.replaceChild(newText, textDiv.childNodes[1]);
+      }
+    </script>
+  </body>
+</html>

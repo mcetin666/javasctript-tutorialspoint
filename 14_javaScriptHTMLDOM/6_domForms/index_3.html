@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <form id="form1">
+      <label for="first"> First Name </label>
+      <input type="text" name="first" id="first" />
+    </form>
+    <form id="form2">
+      <label for="second"> Last Name </label>
+      <input type="text" name="second" id="second" />
+    </form>
+    <div id="output">
+      The innerHTML of the form element having id equal to form2 is:
+    </div>
+    <script>
+      const output = document.getElementById("output");
+      output.innerHTML += document.forms.namedItem("form2").innerHTML;
+    </script>
+  </body>
+</html>
