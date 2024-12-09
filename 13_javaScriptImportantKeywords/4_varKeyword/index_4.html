@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="output">Value of the variable a is:</div>
+    <script>
+      function checkHoisting() {
+        a = 98;
+        document.getElementById("output").innerHTML += a;
+        var a;
+      }
+      // You can't access the variable a here.
+      checkHoisting();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      try {
+        void function test() {
+          output.innerHTML += "The test function is executed!";
+        };
+        test();
+      } catch (error) {
+        output.innerHTML += "The test function is undefined!";
+      }
+    </script>
+  </body>
+</html>

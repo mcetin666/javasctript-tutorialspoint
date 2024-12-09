@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      function Laptop(brand, model, processor) {
+        this.brand = brand;
+        this.model = model;
+        this.processor = processor;
+        this.getLaptop = function () {
+          output.innerHTML +=
+            this.brand + ", " + this.model + ", " + this.processor + "<br>";
+        };
+      }
+      const HP = new Laptop("HP", "VIKING", "i7");
+      const Dell = new Laptop("Dell", "Inspiron", "i5");
+      HP.getLaptop();
+      Dell.getLaptop();
+    </script>
+  </body>
+</html>

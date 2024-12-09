@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="output1">Value of 'this' inside the getDetails() method:</div>
+    <div id="output2">Value of 'this' inside the getInnerDetails() method:</div>
+    <script>
+      const wall = {
+        size: "10",
+        color: "blue",
+        getDetails() {
+          document.getElementById("output1").innerHTML += JSON.stringify(this);
+          const getInnerDetails = () => {
+            document.getElementById("output2").innerHTML +=
+              JSON.stringify(this);
+          };
+          getInnerDetails();
+        },
+      };
+      wall.getDetails();
+    </script>
+  </body>
+</html>

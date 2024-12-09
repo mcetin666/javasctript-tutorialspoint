@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      const fruit = {
+        name: "Apple",
+        color: "red",
+        printFruitDetails() {
+          output.innerHTML += "Furit Name = " + this.name + "<br>";
+          output.innerHTML += "Fruit Color = " + this.color;
+        },
+      };
+      fruit.printFruitDetails();
+    </script>
+  </body>
+</html>

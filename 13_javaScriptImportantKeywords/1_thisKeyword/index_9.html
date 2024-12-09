@@ -15,8 +15,7 @@
         color: "Orange",
         age: 15,
       };
-      const tigerDetails = lion.printDetails.bind(tiger);
-      tigerDetails();
+      lion.printDetails.call(tiger);
     </script>
   </body>
 </html>

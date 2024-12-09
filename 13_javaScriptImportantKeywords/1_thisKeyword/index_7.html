@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="output">Inside the printThis() function, Value of 'this' =</div>
+    <script>
+      const person = {
+        name: "Salman",
+        isBusinessman: false,
+        printDetails() {
+          function printThis() {
+            document.getElementById("output").innerHTML += this;
+          }
+          printThis();
+        },
+      };
+      person.printDetails();
+    </script>
+  </body>
+</html>

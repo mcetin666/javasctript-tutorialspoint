@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <script>
+      function demo() {
+        var x = 10;
+        {
+          var y = 20;
+          // x and y both can be accessible here
+        }
+        document.getElementById("demo1").innerHTML = "X == " + x;
+        document.getElementById("demo2").innerHTML = "Y == " + y;
+      }
+      demo();
+    </script>
+  </body>
+</html>

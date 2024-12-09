@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      function Animal() {
+        this.name = "Lion";
+        this.age = 3;
+        this.color = "Brown";
+      }
+      const newAnimal = new Animal();
+      output.innerHTML = "Animal Name: " + newAnimal.name + "<br>";
+      output.innerHTML += "Animal Age: " + newAnimal.age + "<br>";
+      output.innerHTML += "Animal Color: " + newAnimal.color;
+    </script>
+  </body>
+</html>

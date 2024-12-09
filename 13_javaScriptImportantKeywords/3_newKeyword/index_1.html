@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      function Watch(brand, price, type) {
+        this.brand = brand;
+        this.price = price;
+        this.type = type;
+      }
+      const titan = new Watch("titen", 4000, "analog");
+      const sonata = new Watch("sonata", 3000, "digital");
+      document.getElementById("output").innerHTML +=
+        "The titan object is: " +
+        JSON.stringify(titan) +
+        "<br>" +
+        "The sonata object is: " +
+        JSON.stringify(sonata);
+    </script>
+  </body>
+</html>

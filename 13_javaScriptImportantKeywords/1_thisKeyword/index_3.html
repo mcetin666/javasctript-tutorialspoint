@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      let output = document.getElementById("demo");
+      var message = "Hello World!";
+      function test() {
+        "use strict";
+        output.innerHTML = "The value of this in the strict mode is: " + this;
+      }
+      test();
+    </script>
+  </body>
+</html>

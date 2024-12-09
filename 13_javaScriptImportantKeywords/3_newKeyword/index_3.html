@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      class WindowClass {
+        constructor(color, size, type) {
+          this.color = color;
+          this.size = size;
+          this.type = type;
+        }
+        getDetails = function () {
+          output.innerHTML =
+            "Color: " +
+            this.color +
+            "<br>" +
+            "Size: " +
+            this.size +
+            "<br>" +
+            "Type: " +
+            this.type;
+        };
+      }
+      // Creating the instance of WindowClass class
+      const window1 = new WindowClass("blue", "small", "wooden");
+      // Calling function object
+      window1.getDetails();
+    </script>
+  </body>
+</html>

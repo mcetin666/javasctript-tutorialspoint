@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const output = document.getElementById("output");
+      var num1 = 10;
+      function sum(num2) {
+        output.innerHTML += "num1 + num2 = " + (num1 + num2) + "<br>";
+        output.innerHTML += "window.num1 + num2 = " + (window.num1 + num2);
+      }
+      sum(20);
+    </script>
+  </body>
+</html>

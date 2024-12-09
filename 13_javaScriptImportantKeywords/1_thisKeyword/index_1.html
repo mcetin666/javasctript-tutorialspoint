@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const output = document.getElementById("demo");
+      var num = 10;
+      function printNum() {
+        output.innerHTML += "Inside the function: " + num + "<br>";
+      }
+      this.printNum();
+      output.innerHTML += "Outside the function: " + this.num + "<br>";
+    </script>
+  </body>
+</html>
